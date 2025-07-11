@@ -12555,7 +12555,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "low_side_voltage.kicad_sch"
 			(at 276.86 56.4646 0)
 			(effects
 				(font
@@ -13129,7 +13129,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "low_side_voltage.kicad_sch"
 			(at 63.5 57.7346 0)
 			(effects
 				(font
@@ -13301,7 +13301,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
+		(property "Sheetfile" "low_side_voltage.kicad_sch"
 			(at 231.14 56.4646 0)
 			(effects
 				(font

@@ -2247,7 +2247,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "002cba04-690a-410b-a7f8-139e76a9fbea")
-		(property "Reference" "#PWR0344"
+		(property "Reference" "#PWR0303"
 			(at 55.88 107.95 0)
 			(effects
 				(font
@@ -2295,7 +2295,7 @@
 			(uuid "0f8f8ff9-98c3-4ca3-8147-d8d06837daa5")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "#PWR0303")
 					(unit 1)
@@ -2325,7 +2325,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0345abc2-284d-430c-b2f7-e30df1cc68db")
-		(property "Reference" "C341"
+		(property "Reference" "C302"
 			(at 95.25 68.58 0)
 			(effects
 				(font
@@ -2457,7 +2457,7 @@
 			(uuid "19fa4a04-7965-4d34-91ff-cac0d5cb8525")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "C302")
 					(unit 1)
@@ -2486,7 +2486,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "053582a0-da63-4df4-8ff5-ca11caf17db1")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR07"
 			(at 119.38 83.82 0)
 			(effects
 				(font
@@ -2534,7 +2534,7 @@
 			(uuid "89e112de-05dc-4ae9-9414-c6e1a66adfb5")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "#PWR07")
 					(unit 1)
@@ -2564,7 +2564,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ab83238-df15-4311-8677-50dcad7b9680")
-		(property "Reference" "#PWR0347"
+		(property "Reference" "#PWR0308"
 			(at 131.318 63.5 90)
 			(effects
 				(font
@@ -2612,7 +2612,7 @@
 			(uuid "9f207ca4-4206-4e18-b031-0ee3bf42ea6e")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "#PWR0308")
 					(unit 1)
@@ -2641,7 +2641,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "20eefa86-c0c3-4fa6-9ead-a0b354d24721")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR06"
 			(at 92.71 81.28 0)
 			(effects
 				(font
@@ -2689,7 +2689,7 @@
 			(uuid "cf205b6f-def1-4631-9fe7-382706b75953")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "#PWR06")
 					(unit 1)
@@ -2718,7 +2718,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27b54a98-1556-465c-bf4c-94896fd4f894")
-		(property "Reference" "U312"
+		(property "Reference" "U303"
 			(at 134.62 82.55 0)
 			(effects
 				(font
@@ -2832,7 +2832,7 @@
 			(uuid "728e4b79-33ec-4d80-a0fa-5254abc1f724")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "U303")
 					(unit 1)
@@ -2862,7 +2862,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2870dfa2-e9cb-4129-a3cb-619303da89eb")
-		(property "Reference" "#PWR0346"
+		(property "Reference" "#PWR0306"
 			(at 94.488 62.23 90)
 			(effects
 				(font
@@ -2910,7 +2910,7 @@
 			(uuid "f9bdda10-d9f5-4645-a752-4a13508517a3")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "#PWR0306")
 					(unit 1)
@@ -2940,7 +2940,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b2e6d18-83c3-4ee2-a81c-38d5187c274d")
-		(property "Reference" "R328"
+		(property "Reference" "R302"
 			(at 104.14 94.488 90)
 			(effects
 				(font
@@ -3019,7 +3019,7 @@
 			(uuid "9f3874b8-66ca-4c75-a7a5-297f0a6a9689")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "R302")
 					(unit 1)
@@ -3048,7 +3048,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b61b823-3043-4baf-884b-cb03c8633ad4")
-		(property "Reference" "Rv528"
+		(property "Reference" "Rv503"
 			(at 34.5186 71.2216 0)
 			(effects
 				(font
@@ -3100,7 +3100,7 @@
 			(uuid "7269bcd3-3a88-468e-82ed-e18c94bf8f38")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "Rv503")
 					(unit 1)
@@ -3129,7 +3129,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52dd3ffc-6eb5-45d0-b54e-7325815f7b5d")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR010"
 			(at 140.97 83.82 0)
 			(effects
 				(font
@@ -3177,7 +3177,7 @@
 			(uuid "06806ac7-0f6a-49ba-9929-090c0d38d9b0")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "#PWR010")
 					(unit 1)
@@ -3207,7 +3207,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "55296c66-466e-4e1b-a7ec-72acf0e39dfc")
-		(property "Reference" "R329"
+		(property "Reference" "R303"
 			(at 114.3 77.978 0)
 			(effects
 				(font
@@ -3286,7 +3286,7 @@
 			(uuid "ddd22a31-e46b-4e2e-9d18-465443087af9")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "R303")
 					(unit 1)
@@ -3315,7 +3315,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f39cafa-9e91-4774-bfd5-826ab365419b")
-		(property "Reference" "#PWR0343"
+		(property "Reference" "#PWR0302"
 			(at 54.61 81.28 0)
 			(effects
 				(font
@@ -3363,7 +3363,7 @@
 			(uuid "27e67c37-2895-4ae2-b1bb-e9fd21a36bf8")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "#PWR0302")
 					(unit 1)
@@ -3392,7 +3392,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69cdcf8b-46ba-4fca-bed5-537bbed1db47")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR09"
 			(at 129.54 104.14 0)
 			(effects
 				(font
@@ -3440,7 +3440,7 @@
 			(uuid "55297169-a6e2-4d23-a4d2-2a8ae4298a79")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "#PWR09")
 					(unit 1)
@@ -3469,7 +3469,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7142c942-e563-4a57-a20f-6d8640c8741b")
-		(property "Reference" "C343"
+		(property "Reference" "C316"
 			(at 133.096 72.644 0)
 			(effects
 				(font
@@ -3575,7 +3575,7 @@
 			(uuid "0ec7436b-7a4f-4669-9bd3-6fcc8c48a022")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "C316")
 					(unit 1)
@@ -3604,7 +3604,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "77e8be62-140d-4a38-aa5f-2ddfaa3cb42e")
-		(property "Reference" "R330"
+		(property "Reference" "R304"
 			(at 132.08 107.696 90)
 			(effects
 				(font
@@ -3683,7 +3683,7 @@
 			(uuid "abd6a039-1e7a-4d39-9f22-011f784ca913")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "R304")
 					(unit 1)
@@ -3712,7 +3712,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9ddb9516-e938-4981-92b1-b8219ffce5a4")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR04"
 			(at 91.44 107.95 0)
 			(effects
 				(font
@@ -3760,7 +3760,7 @@
 			(uuid "6e3879f2-0d03-42f3-9130-ba59a02064f5")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "#PWR04")
 					(unit 1)
@@ -3789,7 +3789,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a613dc84-fd4f-4429-91ae-981011739af6")
-		(property "Reference" "Rv529"
+		(property "Reference" "Rv504"
 			(at 34.5186 78.8416 0)
 			(effects
 				(font
@@ -3841,7 +3841,7 @@
 			(uuid "b3bd2897-93c4-46ee-ac0c-885bf3260b72")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "Rv504")
 					(unit 1)
@@ -3871,7 +3871,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b119fbf7-d8b9-4c64-a299-d93b1b12a891")
-		(property "Reference" "U311"
+		(property "Reference" "U302"
 			(at 61.468 75.184 0)
 			(effects
 				(font
@@ -3957,7 +3957,7 @@
 			(uuid "9f76453e-9765-4a6c-9499-68e583778ba0")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "U302")
 					(unit 1)
@@ -3986,7 +3986,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b6a1bffb-84e4-421c-bb95-df301cf80043")
-		(property "Reference" "C342"
+		(property "Reference" "C305"
 			(at 132.08 118.872 90)
 			(effects
 				(font
@@ -4083,7 +4083,7 @@
 			(uuid "f6caa4f0-f14c-4973-b25e-b0baa9b6ea08")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "C305")
 					(unit 1)
@@ -4112,7 +4112,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ba1842f9-76b7-4cda-96d7-7b6fec75532c")
-		(property "Reference" "Rv530"
+		(property "Reference" "Rv505"
 			(at 34.5186 90.2716 0)
 			(effects
 				(font
@@ -4164,7 +4164,7 @@
 			(uuid "f4820164-4551-4ec1-a277-f5409437e89e")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "Rv505")
 					(unit 1)
@@ -4193,7 +4193,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc79acc0-39ca-4cf6-9ac2-a56180d016f6")
-		(property "Reference" "Rv527"
+		(property "Reference" "Rv502"
 			(at 34.5186 63.6016 0)
 			(effects
 				(font
@@ -4245,7 +4245,7 @@
 			(uuid "be1691ae-652f-4875-90fd-83918c324643")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "Rv502")
 					(unit 1)
@@ -4274,7 +4274,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bcf6d27c-233e-49f4-aa36-6ee4b6a31970")
-		(property "Reference" "C340"
+		(property "Reference" "C301"
 			(at 52.07 68.58 0)
 			(effects
 				(font
@@ -4406,7 +4406,7 @@
 			(uuid "61c836df-1a22-4468-81e8-922a010aeeec")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "C301")
 					(unit 1)
@@ -4436,7 +4436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1b87a0c-b23c-4684-9a58-728642a744bc")
-		(property "Reference" "#PWR0345"
+		(property "Reference" "#PWR0304"
 			(at 60.198 62.23 90)
 			(effects
 				(font
@@ -4484,7 +4484,7 @@
 			(uuid "be1361e3-5906-4b87-9df5-67beab917ca6")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "#PWR0304")
 					(unit 1)
@@ -4514,7 +4514,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f4a957ba-4d6d-4f3e-9e6a-f8c905b38cfe")
-		(property "Reference" "R327"
+		(property "Reference" "R301"
 			(at 103.886 81.534 90)
 			(effects
 				(font
@@ -4593,7 +4593,7 @@
 			(uuid "f3d402f6-4b60-412d-af52-216400988815")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "R301")
 					(unit 1)
@@ -4622,7 +4622,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fe94821c-cb79-43de-b29a-4850b6a0cfcb")
-		(property "Reference" "Rv526"
+		(property "Reference" "Rv501"
 			(at 34.5186 55.9816 0)
 			(effects
 				(font
@@ -4674,7 +4674,7 @@
 			(uuid "993fbdee-b126-4dc1-91b3-51ba9cb1397b")
 		)
 		(instances
-			(project "DAB"
+			(project "micro_inverter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/3ea151e7-6bb7-4df0-80a5-b2ad4a7f2d78"
 					(reference "Rv501")
 					(unit 1)
