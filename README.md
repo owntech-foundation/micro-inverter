@@ -10,8 +10,10 @@ The project goal are :
 
 ## Open, for everyone, forever
 
-This project is propulsed by its community. 
-The collective work generated is meant to remain open. 
+- This project is propulsed by its community. 
+- The collective work generated is meant to remain open.
+- Design files are made with open source software - Namely kiCAD.
+
 In that sense, the owntech foundation aims at protecting this technical common.
 
 ## (ultra) Preliminary specifications
