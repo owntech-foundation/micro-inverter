@@ -22,7 +22,7 @@ In that sense, the owntech foundation aims at protecting this technical common.
 
 ## Licence 
 
-This project is licenced under **CERN-OHL-V2-S** open source hardware licence. Licence file can be found under `licence/cern-ohl-v2-s`. 
+This project is licenced under **CERN-OHL-V2-S** open source hardware licence. Licence file can be found under `License/cern-ohl-v2-s`. 
  
 
 
