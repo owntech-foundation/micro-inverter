@@ -1,5 +1,5 @@
 fp*
-DAB-backups/*
+micro_inverter-backups/*
 Symbols.bak
 replicate_layout.log
-~DAB.kicad_sch.lck
+*.kicad_sch.lck

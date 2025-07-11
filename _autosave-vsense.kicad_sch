@@ -1,0 +1,13 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "65c55c38-8ca6-428f-8c63-83985195a2de")
+	(paper "A4")
+	(title_block
+		(title "Dual Active Bridge - 400W")
+		(date "2024-02-06")
+		(comment 1 "JAL")
+	)
+	(lib_symbols)
+)
