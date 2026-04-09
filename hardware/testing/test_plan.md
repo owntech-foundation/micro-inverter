@@ -50,12 +50,16 @@ Each stage validates only the functions that should already be active at that po
 | 7   |     | DC/AC testing | Validate full DC/AC stage operation, synchronization, and generated sinewave behavior. |
 | 8   |     | Mount capacitors and common-mode choke | Close the prototype assembly after the functional validation gates have been passed. |
 
-### Test 0 Check for worst case scenario  
+### Test 0 Bare-board safety and worst-case checks
 
-Objective: This test validates that the base supplies of the board are not shorted.
+Objective: Validate that the board is electrically safe to power for the first time by checking the main isolation paths before any supply is applied.
 
-Tool needed: 
-- With a multimeter in omhmeter mode 
+Entry condition: board received from PCBA, mechanically secured, and not yet powered.
+
+Exit condition: no critical short or unintended continuity remains on the main power and safety nodes.
+
+Tool needed:
+- Multimeter in ohmmeter mode
 
 **System under test placeholder**
 
@@ -74,43 +78,47 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 **Sub-tests**
 
-0.1 - Check that 12V to ground is not shorted.
+0.1 - Check that the `12V` rail is not shorted to ground before any power-up attempt.
 
 ![12V test points highlighted on the board](Images/12V_test_points.png)
 
-0.2 - Check that 5V to ground is not shorted. 
+0.2 - Check that the `5V` rail is not shorted to ground before any power-up attempt.
 
 ![5V test points highlighted on the board](Images/5V_test_points.png)
 
-0.3 - Check that PV+ and PV- are not shorted
+0.3 - Check that `PV+` and `PV-` are not shorted so the feeder input can be energized safely later.
 
 ![PV+ and PV- test points highlighted on the board](Images/PV+_PV-_test_points.png)
 
 
-0.4 - Check that L and N are not shorted
+0.4 - Check that `L` and `N` are not shorted before any AC-side testing.
 
 ![PV+ and PV- test points highlighted on the board](Images/PV+_PV-_test_points.png)
 
 
-0.5 - Check that PE and L and N and PV+ and PV- are not shorted
+0.5 - Check that `PE`, `L`, `N`, `PV+`, and `PV-` do not show unintended continuity.
 
 ![L, N and PE connected to the board](Images/L_N_PE_test_points.png)
 
 
 ----
-## Test 1 Low side feeder characterization
+## Test 1 Low-side feeder characterization
 
-Objective: characterize the behaviour of the low side feeder.
+Objective: Validate the feeder block by proving that the auxiliary rails and local reference are present, regulated, and usable by the rest of the board.
 
-> List of materials 
+Entry condition: Test 0 completed successfully and the board is safe for first power-up.
+
+Exit condition: all required low-voltage rails and the reference are available, stable, and characterized over the intended input range.
+
+> List of materials
 > - [ ] Thermal camera
 > - [ ] Current limited voltage source
 > - [ ] Cables
 > - [ ] Screws or adaptors
-> - [ ] Multimeter 
+> - [ ] Multimeter
 
 > [!warning]
-> Watchout for hot spots!> 
+> Watch out for hot spots during first energization and during load sweeps.
 
 **System under test placeholder**
 
@@ -136,7 +144,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 **Sub-tests**
 
-1.1 - Power the board from the PV input and verify that the `12V_LV` rail starts correctly, reaches its nominal voltage, and remains stable under no-load conditions. 
+1.1 - Power the board from the PV input and verify that the `12V_LV` rail starts correctly, reaches its nominal voltage, and remains stable under no-load conditions.
 <!-- What is the input voltage level? -->
 <!-- What is the "nominal" voltage level? -->
 
@@ -150,15 +158,16 @@ _12V test points highlighted on the board_
 
 ![5V test points highlighted on the board](Images/5V_test_points.png)
 _5V test points highlighted on the board_
+
 1.3 - Verify that the `12V_HV` rail is generated correctly and remains within its expected operating range.
 
 ![12VH test points highlighted on the board](Images/12VH_test_point.png)
 _12VH test points highlighted on the board_
+
 1.4 - Verify that the `5V_ACsense` rail is available and correctly regulated for the sensing stage.
 
 ![5V_ACsens test points highlighted on the board](Images/5V_ACSense_test_point.png)
 _5V_ACsens test points highlighted on the board_
-
 
 1.5 - Verify that the `5V_HV` rail is present and stable at its nominal value.
 
@@ -175,14 +184,14 @@ _5V_SN1 test points highlighted on the board_
 ![5V_SN2 test points highlighted on the board](Images/5V_SN2_test_point.png)
 _5V_SN2 test points highlighted on the board_
 
-1.8 - Measure the reference output and verify that `Vref` is `1.024V` within the acceptable tolerance and remains stable over time.
+1.8 - Measure the reference output and verify that `Vref` is `1.024V` within the acceptable tolerance and remains stable over time before depending on it for later measurements.
 
 ![Vref test points highlighted on the board](Images/Vref_test_points.png)
 _Vref test points highlighted on the board_
 
-*There might be an issue with capacitor loading of [TL431](https://www.lcsc.com/datasheet/C181103.pdf) that might place the regulator in unstable region. In that case, we will need to swap output capacitance to either lower or higher value.* 
+*There might be an issue with capacitor loading of [TL431](https://www.lcsc.com/datasheet/C181103.pdf) that might place the regulator in unstable region. In that case, we will need to swap output capacitance to either lower or higher value.*
 
-1.9 - Sweep the PV input voltage from `10V` to `70V` and verify that the auxiliary supply stage remains operational over the full range. Linked deliverable: **D1.09 - Plot of regulated output voltage versus input voltage (`Vout` against `Vin`)**.
+1.9 - Sweep the PV input voltage from `10V` to `70V` and verify that the feeder remains operational over the full range. Linked deliverable: **D1.09 - Plot of regulated output voltage versus input voltage (`Vout` against `Vin`)**.
 
 ![Test 1.9 image anchor](Images/Test_1_9.png)
 
@@ -207,7 +216,13 @@ _Vref test points highlighted on the board_
 | D1.15 | 1.11 | Plot of `5V` rail efficiency versus input voltage | TO DO |
 
 
-## Test 2 check measurements at idle state    
+## Test 2 Check measurements at idle state
+
+Objective: Validate the measurement block at low risk by confirming expected offsets and nominal idle readings before any active switching or high-energy conversion test.
+
+Entry condition: Test 1 completed successfully and all required low-voltage rails are available and stable.
+
+Exit condition: the main sensing channels show expected idle values and are ready to be used by the microcontroller in later tests.
 
 **System under test placeholder**
 
@@ -227,32 +242,38 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 **Sub-tests**
 
-2.1 - Check that DC voltage input sensor value is 1V for a DC voltage input of 40V.
+2.1 - Check that the DC input voltage sensor reports `1V` for a DC input of `40V`.
 
 ![Test 2.1 image anchor](Images/Test_2_1.png)
 
-2.2 - Check that I_Ilow1 sensor value is about 0V under no input current conditions.
+2.2 - Check that the `I_Ilow1` sensor value is about `0V` under no-input-current conditions.
 
 ![Test 2.2 image anchor](Images/Test_2_2.png)
 
-2.3 - Check that I_Ilow2 sensor value is about 0V under no input current conditions.
+2.3 - Check that the `I_Ilow2` sensor value is about `0V` under no-input-current conditions.
 
 ![Test 2.3 image anchor](Images/Test_2_3.png)
 
-2.4 - Check that V_DcHigh sensor value is about 0V with no voltage on the 400V bus.
+2.4 - Check that the `V_DcHigh` sensor value is about `0V` with no voltage on the `400V` bus.
 
 ![Test 2.4 image anchor](Images/Test_2_4.png)
 
-2.5 - Check that VAc sensor value is about 1V with no voltage on the AC bus.
+2.5 - Check that the `VAc` sensor value is about `1V` with no voltage on the AC bus.
 
 ![Test 2.5 image anchor](Images/Test_2_5.png)
 
-2.6 - Check that I_Ac sensor value is about 1V with no current on the AC bus.
+2.6 - Check that the `I_Ac` sensor value is about `1V` with no current on the AC bus.
 
 ![Test 2.6 image anchor](Images/Test_2_6.png)
 
 
 ## Test 3 Assemble SPIN board and test relay
+
+Objective: Validate the microcontroller block by flashing firmware, proving the board boots correctly, and confirming the relay control path behaves as expected.
+
+Entry condition: Tests 1 and 2 completed successfully so that power and idle sensing are already trusted.
+
+Exit condition: the microcontroller can be programmed, boots correctly, and controls the relay in a known safe way.
 
 ![Board with SPIN](Images/Spin_ASM.png)
 
@@ -271,15 +292,15 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 **Sub-tests**
 
-3.1 - Flash firmware.
+3.1 - Flash firmware and confirm that the microcontroller starts from the intended software baseline for the following validation steps.
 
 ![Test 3.1 image anchor](Images/Test_3_1.png)
 
-3.2 - Verify that by default the relay is **OPEN (NOT connected)**.
+3.2 - Verify that by default the relay is **OPEN (NOT connected)** so the system remains in a safe state at boot.
 
 ![Test 3.2 image anchor](Images/Test_3_2.png)
 
-3.3 - Verify that the SPIN board is able to close and open the contact.
+3.3 - Verify that the SPIN board is able to close and open the contact on command.
 
 ![Test 3.3 image anchor](Images/Test_3_3.png)
 
