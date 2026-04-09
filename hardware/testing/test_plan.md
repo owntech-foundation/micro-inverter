@@ -305,9 +305,16 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 ![Test 3.3 image anchor](Images/Test_3_3.png)
 
 
-## Test 4 check pwm signals at the switch level.
+## Test 4 Check PWM signals at the switch level
 
-**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
+Objective: Validate the control path from the microcontroller to the driver and into the power stage before proceeding to higher-energy conversion tests.
+
+Entry condition: Test 3 completed successfully and the microcontroller is available to generate the required control signals.
+
+Exit condition: PWM generation, isolation, polarity, and observed switch-node behavior are consistent with the intended driver operation.
+
+> [!warning]
+> Dangerous test. Make sure you fully understand the setup, probe references, and expected switching behavior before proceeding. Do not perform this test alone.
 
 **System under test placeholder**
 
@@ -325,7 +332,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 **Sub-tests**
 
-4.1 - Use test points provided for the low-side switch and verify that the switches operate correctly. Mind that they are not all on the same voltage reference when testing.
+4.1 - Use the test points provided for the low-side switch and verify that the switches operate correctly. Mind that they are not all on the same voltage reference when testing.
 
 ![Test 4.1 image anchor](Images/Test_4_1.png)
 
@@ -342,9 +349,15 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 ![Test 4.4 image anchor](Images/Test_4_4.png)
 
 
-### Test 5 Check the gain and offsets for the measurements  
+### Test 5 Check the gain and offsets for the measurements
 
-![transfos](Images/transfos.png)  
+Objective: Validate the measurement block under energized conditions by applying controlled high-voltage DC and AC inputs and confirming that the microcontroller receives correct sensing information.
+
+Entry condition: Tests 1 through 4 completed successfully so that feeder, idle measurements, microcontroller, and driver behavior are already understood.
+
+Exit condition: high-voltage DC sensing, AC sensing, and PLL-related measurement behavior are validated without yet running full power conversion.
+
+![transfos](Images/transfos.png)
 
 **System under test placeholder**
 
@@ -365,39 +378,41 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 **Sub-tests**
 
-5.1 - Isolate the last resistance from the DC sensor to connect it to the output of the DC/DC stage.
+5.1 - Isolate the last resistance from the DC sensor so it is connected to the output of the DC/DC stage. This prepares the energized sensing test while keeping the DC/DC and DC/AC stages separated.
 
 ![Test 5.1 image anchor](Images/Test_5_1.png)
 
-This way, the DCDC stage is fully disconnected from the DC/AC stage and you can test the DC/DC stage with more peace of mind. 
+This way, the DCDC stage is fully disconnected from the DC/AC stage and you can test the DC/DC stage with more peace of mind.
 
-5.2 - Check that there is no more continuity between DC/AC input and DC/DC output.
+5.2 - Check that there is no more continuity between DC/AC input and DC/DC output before applying energized stimuli.
 
 ![Test 5.2 image anchor](Images/Test_5_2.png)
 
-![separation DC bus](Images/DCBusSeparation.png)  
+![separation DC bus](Images/DCBusSeparation.png)
 
 
-**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
+> [!warning]
+> Dangerous test. Make sure you fully understand the setup, PPE, isolation, and discharge procedure before injecting high voltage. Do not perform this test alone.
 
-5.3 - Inject 400V on the capacitor bank as shown below.
+5.3 - Inject `400V` on the capacitor bank as shown below in order to energize the DC sensing path.
 
 ![Test 5.3 image anchor](Images/Test_5_3.png)
 
-5.4 - Make sure the microcontroller reads 400V on the VDc bus sensor.
+5.4 - Make sure the microcontroller reads `400V` on the `VDc` bus sensor.
 
 ![400V](Images/Inject400.png)
 
 
-**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
+> [!warning]
+> Dangerous test. Make sure you fully understand the AC injection setup, isolation, and probe references before proceeding. Do not perform this test alone.
 
-5.5 - Inject 230V 50Hz as shown below.
+5.5 - Inject `230V`, `50Hz` as shown below in order to energize the AC sensing path.
 
 ![Test 5.5 image anchor](Images/Test_5_5.png)
 
-5.6 - Make sure the microcontroller reads 230VRms and 50Hz on the VDc bus sensor.
+5.6 - Make sure the microcontroller reads `230VRms` and `50Hz` on the AC sensing path.
 
-5.7 - Check the PLL behavior.
+5.7 - Check the PLL behavior using the injected AC input.
 
 ![230V](Images/Inject230.png)
 
