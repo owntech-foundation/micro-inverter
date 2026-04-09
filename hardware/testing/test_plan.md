@@ -31,7 +31,6 @@ The progression used in this document is:
 Each stage validates only the functions that should already be active at that point. This reduces risk, makes failures easier to localize, and provides a clear gate before moving to the next level of integration.
 
 
-
 ## State of the bare board before final assembly of sub-pcbs and non COTS parts
 
 ![Board as it arrives from PCBA](Images/As_built.png)
@@ -90,11 +89,9 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 ![PV+ and PV- test points highlighted on the board](Images/PV+_PV-_test_points.png)
 
-
 0.4 - Check that `L` and `N` are not shorted before any AC-side testing.
 
 ![PV+ and PV- test points highlighted on the board](Images/PV+_PV-_test_points.png)
-
 
 0.5 - Check that `PE`, `L`, `N`, `PV+`, and `PV-` do not show unintended continuity.
 
@@ -124,7 +121,6 @@ Exit condition: all required low-voltage rails and the reference are available, 
 
 ![System under test placeholder](Images/system_overview.drawio.png)
 _System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
-
 
 **Sub-tests summary**
 
@@ -390,7 +386,6 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 
 ![separation DC bus](Images/DCBusSeparation.png)
 
-
 > [!warning]
 > Dangerous test. Make sure you fully understand the setup, PPE, isolation, and discharge procedure before injecting high voltage. Do not perform this test alone.
 
@@ -401,7 +396,6 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 5.4 - Make sure the microcontroller reads `400V` on the `VDc` bus sensor.
 
 ![400V](Images/Inject400.png)
-
 
 > [!warning]
 > Dangerous test. Make sure you fully understand the AC injection setup, isolation, and probe references before proceeding. Do not perform this test alone.
@@ -459,7 +453,6 @@ This is important to test ZVS functionality.
 > [!warning]
 > Dangerous test. Make sure you fully understand the setup, the expected converter behavior, and the discharge procedure before energizing the stage. Do not perform this test alone.
 
-
 **Make sure you have a thermal camera when doing first tests**
 
 6.2 - Add a `250W` rheostat rated for `230V` between `400V-` and `400V+` so the DC/DC output can be exercised under controlled load.
@@ -469,7 +462,6 @@ This is important to test ZVS functionality.
 Electronics load disturbs efficiency test.
 
 ![400V](Images/Inject400.png)
-
 
 6.3 - Run the DCDC test code. That is the code with the open-loop boost and variable dead-time.
 
@@ -506,7 +498,6 @@ Exit condition: the DC/AC stage starts correctly, produces the expected waveform
 
 > [!warning]
 > Dangerous test. Make sure you fully understand the AC and DC sources, probe references, and synchronization measurements before proceeding. Do not perform this test alone.
-
 
 ![DCAC stage](Images/DCACsupply.png)
 
