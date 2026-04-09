@@ -418,7 +418,13 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 
 **NOW DISCONNECT THE 230V. WE DO NOT NEED IT TO TEST DC/DC STAGE**
 
-### Test 6 Assemble the two HF transformers  
+### Test 6 Assemble the two HF transformers
+
+Objective: Validate the DC/DC power stage by preparing the hardware, running controlled open-loop testing, and characterizing regulation and ZVS behavior.
+
+Entry condition: Tests 1 through 5 completed successfully and the feeder, measurement, microcontroller, driver, and energized sensing paths are already validated.
+
+Exit condition: the DC/DC stage can be exercised in a controlled way, reaches the target output, and produces the required characterization data before final transformer closure.
 
 **System under test placeholder**
 
@@ -439,7 +445,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 **Sub-tests**
 
-6.1 - **DO add a series wire between the primary side and MOSFETs to place an oscilloscope current probe**.
+6.1 - **DO add a series wire between the primary side and MOSFETs to place an oscilloscope current probe**. This setup is required before any actuation because the ZVS verification depends on it.
 
 ![Test 6.1 image anchor](Images/Test_6_1.png)
 
@@ -450,33 +456,34 @@ This is important to test ZVS functionality.
 
 ![transfos](Images/transfos.png)
 
-**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
+> [!warning]
+> Dangerous test. Make sure you fully understand the setup, the expected converter behavior, and the discharge procedure before energizing the stage. Do not perform this test alone.
 
 
 **Make sure you have a thermal camera when doing first tests**
 
-6.2 - Add a 250W rheostat rated for 230V between 400V- and 400V+.
+6.2 - Add a `250W` rheostat rated for `230V` between `400V-` and `400V+` so the DC/DC output can be exercised under controlled load.
 
 ![Test 6.2 image anchor](Images/Test_6_2.png)
 
 Electronics load disturbs efficiency test.
 
-![400V](Images/Inject400.png) 
+![400V](Images/Inject400.png)
 
 
 6.3 - Run the DCDC test code. That is the code with the open-loop boost and variable dead-time.
 
 ![Test 6.3 image anchor](Images/Test_6_3.png)
 
-6.4 - Increase slowly the duty-cycle up to get 400V on the output.
+6.4 - Increase slowly the duty cycle until the converter reaches `400V` on the output.
 
 ![Test 6.4 image anchor](Images/Test_6_4.png)
 
-6.5 - Verify it stabilizes the output voltage at 400V.
+6.5 - Verify that the DC/DC stage stabilizes the output voltage at `400V`.
 
 ![Test 6.5 image anchor](Images/Test_6_5.png)
 
-6.6 - Follow the test procedure to verify we operate under ZVS.
+6.6 - Follow the test procedure to verify that the converter operates under ZVS.
 
 ![Test 6.6 image anchor](Images/Test_6_6.png)
 
@@ -489,12 +496,19 @@ Electronics load disturbs efficiency test.
 ![Test 6.7 image anchor](Images/Test_6_7.png)
 
 
-## Test 7 DC/AC testing   
+## Test 7 DC/AC testing
 
-**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
+Objective: Validate the DC/AC stage as an integrated function by confirming sensing, PLL behavior, relay state, inverter start-up, generated sinewave, and synchronization.
+
+Entry condition: Tests 1 through 6 completed successfully and the DC/DC stage has already been characterized in a controlled way.
+
+Exit condition: the DC/AC stage starts correctly, produces the expected waveform, and synchronizes correctly with the grid-side reference.
+
+> [!warning]
+> Dangerous test. Make sure you fully understand the AC and DC sources, probe references, and synchronization measurements before proceeding. Do not perform this test alone.
 
 
-![DCAC stage](Images/DCACsupply.png) 
+![DCAC stage](Images/DCACsupply.png)
 
 **System under test placeholder**
 
@@ -515,21 +529,21 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 **Sub-tests**
 
-7.1 - Inject 400V using preferably a lab bench supply with current-limiting capabilities.
+7.1 - Inject `400V` using preferably a lab bench supply with current-limiting capabilities.
 
 ![Test 7.1 image anchor](Images/Test_7_1.png)
 
 ![230V](Images/Inject230.png)
 
-7.2 - Inject 230V using preferably an isolation transformer.
+7.2 - Inject `230V` using preferably an isolation transformer.
 
 ![Test 7.2 image anchor](Images/Test_7_2.png)
 
-7.3 - Check PLL once again.
+7.3 - Check PLL once again with both external supplies present.
 
 ![Test 7.3 image anchor](Images/Test_7_3.png)
 
-7.4 - Make sure the relay stays **OPEN (NOT connected)**.
+7.4 - Make sure the relay stays **OPEN (NOT connected)** before inverter start-up.
 
 ![Test 7.4 image anchor](Images/Test_7_4.png)
 
@@ -541,15 +555,21 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 ![Test 7.6 image anchor](Images/Test_7_6.png)
 
-7.7 - Check synchronization between grid side and output of the inverter. They should be perfectly in sync. Think twice about how to do the measurement with isolated probes.
+7.7 - Check synchronization between the grid side and the inverter output. They should be perfectly in sync. Think twice about how to do the measurement with isolated probes.
 
 ![Test 7.7 image anchor](Images/Test_7_7.png)
 
-![Sync](Images/SYNC.png)  
+![Sync](Images/SYNC.png)
 
-## Test 8 Mount capacitors, and common-mode choke  
+## Test 8 Mount capacitors, and common-mode choke
 
-![Final assembly](Images/finalASM.png)  
+Objective: Complete the assembly only after the main functional validation steps have succeeded and confirm the prototype is ready for the next level of integration.
+
+Entry condition: Tests 0 through 7 completed successfully and the major converter functions have already been validated.
+
+Exit condition: the final passive parts are mounted and the board is ready for integration testing as a fully assembled prototype.
+
+![Final assembly](Images/finalASM.png)
 
 **System under test placeholder**
 
@@ -565,10 +585,10 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 **Sub-tests**
 
-8.1 - Mount common-mode choke and PP capacitors.
+8.1 - Mount common-mode choke and PP capacitors after the earlier functional gates have been passed.
 
 ![Test 8.1 image anchor](Images/Test_8_1.png)
 
-8.2 - Confirm the board is ready for integration test.
+8.2 - Confirm that the board is ready for integration testing.
 
 ![Test 8.2 image anchor](Images/Test_8_2.png)
