@@ -1,19 +1,34 @@
-# Commisionning and test plan for the first prototypes. 
+# Commisionning and test plan for the first prototypes.
 
-THIS DOCUMENT DESRIBES THE TEST PROCEDURE TO TEST A PROTOTYPE OF uVERTER. 
+THIS DOCUMENT DESRIBES THE TEST PROCEDURE TO TEST A PROTOTYPE OF uVERTER.
 
-THIS IS INDENDED FOR TRAINED AND SKILLED POWER ELECTRONICS TECHNICIANS. DO NOT ATTEMPT WITHOUT PROPER SKILLS, PPE AND ASSISTANCE.  
+THIS IS INDENDED FOR TRAINED AND SKILLED POWER ELECTRONICS TECHNICIANS. DO NOT ATTEMPT WITHOUT PROPER SKILLS, PPE AND ASSISTANCE.
 
 DO NOT PROCEED ALONE WITH THIS TEST PROCEDURE.
 
 
 ## Overall system functional blocks
 
-A power converter can be structured on the five sub-blocks shown below. 
+The micro-inverter is a cascaded power converter made of a DC/DC stage and a DC/AC stage.
+
+![Overview of the micro-verter](Images/control_overview.drawio.png)
+
+To validate the converter in a controlled way, the test procedure follows the functional dependency chain of a power converter instead of jumping directly to full-power operation.
+
+A power converter can be structured around the five sub-blocks shown below:
+- `Power`
+- `Feeder`
+- `Measurements`
+- `Microcontroller`
+- `Driver`
 
 ![Five sub-blocks of a power converter](Images/power_converter.drawio.png)
 
-The test procedure will test each of these blocks in part and validate the totality of the converter itself. 
+The progression used in this document is:
+
+`bare-board safety -> feeder/power-up -> idle measurements -> microcontroller bring-up -> driver validation -> energized measurement validation -> DC/DC power stage -> DC/AC stage -> final assembly`
+
+Each stage validates only the functions that should already be active at that point. This reduces risk, makes failures easier to localize, and provides a clear gate before moving to the next level of integration.
 
 
 
@@ -25,15 +40,15 @@ The test procedure will test each of these blocks in part and validate the total
 
 | Test | Status | Title | Objective |
 | --- | --- | --- | --- |
-| 0   |     |  Check for worst-case scenario | Verify there are no critical shorts before powering the board. |
-| 1   |     |  Low-side feeder characterization | Validate auxiliary supply rails, loading behavior, and efficiency across input voltage range. |
-| 2   |     |  Check measurements at idle state | Confirm sensor offsets and nominal idle readings before active switching. |
-| 3   |     |  Assemble SPIN board and test relay | Flash firmware and verify relay open/close behavior. |
-| 4   |     |  Check PWM signals at the switch level | Validate switch-level PWM behavior, isolator propagation, and signal polarity. |
-| 5   |     |  Check the gain and offsets for the measurements | Verify measurement chain behavior for high-voltage DC and AC sensing. |
-| 6   |     |  Assemble the two HF transformers | Prepare the power stage for DC/DC testing and ZVS verification. |
-| 7   |     |  DC/AC testing | Validate inverter startup, synchronization, and generated sinewave behavior. |
-| 8   |     |  Mount capacitors and common-mode choke | Complete assembly and prepare the prototype for integration testing. |
+| 0   |     | Check for worst-case scenario | Validate bare-board isolation and confirm the board can be powered safely. |
+| 1   |     | Low-side feeder characterization | Validate the feeder block by proving the auxiliary rails and reference used by the rest of the system. |
+| 2   |     | Check measurements at idle state | Validate the measurement block at low risk by confirming offsets and nominal idle readings before active switching. |
+| 3   |     | Assemble SPIN board and test relay | Validate the microcontroller block by flashing firmware and proving basic relay control. |
+| 4   |     | Check PWM signals at the switch level | Validate the microcontroller-to-driver-to-power control path before integrating the power stages. |
+| 5   |     | Check the gain and offsets for the measurements | Validate energized measurement and PLL inputs using controlled high-voltage DC and AC injection. |
+| 6   |     | Assemble the two HF transformers | Validate the DC/DC power stage, including open-loop operation, regulation, and ZVS characterization. |
+| 7   |     | DC/AC testing | Validate full DC/AC stage operation, synchronization, and generated sinewave behavior. |
+| 8   |     | Mount capacitors and common-mode choke | Close the prototype assembly after the functional validation gates have been passed. |
 
 ### Test 0 Check for worst case scenario  
 
@@ -41,6 +56,11 @@ Objective: This test validates that the base supplies of the board are not short
 
 Tool needed: 
 - With a multimeter in omhmeter mode 
+
+**System under test placeholder**
+
+![System under test placeholder](Images/system_overview.drawio.png)
+_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
 
 **Sub-tests summary**
 
@@ -91,6 +111,11 @@ Objective: characterize the behaviour of the low side feeder.
 
 > [!warning]
 > Watchout for hot spots!> 
+
+**System under test placeholder**
+
+![System under test placeholder](Images/system_overview.drawio.png)
+_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
 
 
 **Sub-tests summary**
@@ -184,6 +209,11 @@ _Vref test points highlighted on the board_
 
 ## Test 2 check measurements at idle state    
 
+**System under test placeholder**
+
+![System under test placeholder](Images/system_overview.drawio.png)
+_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+
 **Sub-tests summary**
 
 | Test | Title | State |
@@ -226,6 +256,11 @@ _Vref test points highlighted on the board_
 
 ![Board with SPIN](Images/Spin_ASM.png)
 
+**System under test placeholder**
+
+![System under test placeholder](Images/system_overview.drawio.png)
+_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+
 **Sub-tests summary**
 
 | Test | Title | State |
@@ -252,6 +287,11 @@ _Vref test points highlighted on the board_
 ## Test 4 check pwm signals at the switch level.
 
 **The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
+
+**System under test placeholder**
+
+![System under test placeholder](Images/system_overview.drawio.png)
+_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
 
 **Sub-tests summary**
 
@@ -284,6 +324,11 @@ _Vref test points highlighted on the board_
 ### Test 5 Check the gain and offsets for the measurements  
 
 ![transfos](Images/transfos.png)  
+
+**System under test placeholder**
+
+![System under test placeholder](Images/system_overview.drawio.png)
+_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
 
 **Sub-tests summary**
 
@@ -338,6 +383,11 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 **NOW DISCONNECT THE 230V. WE DO NOT NEED IT TO TEST DC/DC STAGE**
 
 ### Test 6 Assemble the two HF transformers  
+
+**System under test placeholder**
+
+![System under test placeholder](Images/system_overview.drawio.png)
+_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
 
 **Sub-tests summary**
 
@@ -410,6 +460,11 @@ Electronics load disturbs efficiency test.
 
 ![DCAC stage](Images/DCACsupply.png) 
 
+**System under test placeholder**
+
+![System under test placeholder](Images/system_overview.drawio.png)
+_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+
 **Sub-tests summary**
 
 | Test | Title | State |
@@ -459,6 +514,11 @@ Electronics load disturbs efficiency test.
 ## Test 8 Mount capacitors, and common-mode choke  
 
 ![Final assembly](Images/finalASM.png)  
+
+**System under test placeholder**
+
+![System under test placeholder](Images/system_overview.drawio.png)
+_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
 
 **Sub-tests summary**
 
