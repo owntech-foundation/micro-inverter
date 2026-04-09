@@ -49,7 +49,8 @@ Each stage validates only the functions that should already be active at that po
 | 7   |     | DC/AC testing | Validate full DC/AC stage operation, synchronization, and generated sinewave behavior. |
 | 8   |     | Mount capacitors and common-mode choke | Close the prototype assembly after the functional validation gates have been passed. |
 
-### Test 0 Bare-board safety and worst-case checks
+#-----
+## Test 0 Bare-board safety and worst-case checks
 
 Objective: Validate that the board is electrically safe to power for the first time by checking the main isolation paths before any supply is applied.
 
@@ -57,8 +58,10 @@ Entry condition: board received from PCBA, mechanically secured, and not yet pow
 
 Exit condition: no critical short or unintended continuity remains on the main power and safety nodes.
 
-Tool needed:
-- Multimeter in ohmmeter mode
+> List of materials
+> - [ ] Multimeter in ohmmeter mode
+> - [ ] Test leads
+> - [ ] Board support or insulated work surface
 
 **System under test placeholder**
 
@@ -99,6 +102,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 
 ----
+-----
 ## Test 1 Low-side feeder characterization
 
 Objective: Validate the feeder block by proving that the auxiliary rails and local reference are present, regulated, and usable by the rest of the board.
@@ -212,6 +216,7 @@ _Vref test points highlighted on the board_
 | D1.15 | 1.11 | Plot of `5V` rail efficiency versus input voltage | TO DO |
 
 
+-----
 ## Test 2 Check measurements at idle state
 
 Objective: Validate the measurement block at low risk by confirming expected offsets and nominal idle readings before any active switching or high-energy conversion test.
@@ -219,6 +224,13 @@ Objective: Validate the measurement block at low risk by confirming expected off
 Entry condition: Test 1 completed successfully and all required low-voltage rails are available and stable.
 
 Exit condition: the main sensing channels show expected idle values and are ready to be used by the microcontroller in later tests.
+
+> List of materials
+> - [ ] Current limited DC source
+> - [ ] Multimeter
+> - [ ] Oscilloscope
+> - [ ] Probe leads and clips
+> - [ ] Cables and adaptors
 
 **System under test placeholder**
 
@@ -263,6 +275,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 ![Test 2.6 image anchor](Images/Test_2_6.png)
 
 
+-----
 ## Test 3 Assemble SPIN board and test relay
 
 Objective: Validate the microcontroller block by flashing firmware, proving the board boots correctly, and confirming the relay control path behaves as expected.
@@ -272,6 +285,13 @@ Entry condition: Tests 1 and 2 completed successfully so that power and idle sen
 Exit condition: the microcontroller can be programmed, boots correctly, and controls the relay in a known safe way.
 
 ![Board with SPIN](Images/Spin_ASM.png)
+
+> List of materials
+> - [ ] SPIN board
+> - [ ] Programming cable or debug probe
+> - [ ] Computer with firmware tools
+> - [ ] Power source for board bring-up
+> - [ ] Multimeter or oscilloscope
 
 **System under test placeholder**
 
@@ -301,6 +321,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 ![Test 3.3 image anchor](Images/Test_3_3.png)
 
 
+-----
 ## Test 4 Check PWM signals at the switch level
 
 Objective: Validate the control path from the microcontroller to the driver and into the power stage before proceeding to higher-energy conversion tests.
@@ -308,6 +329,13 @@ Objective: Validate the control path from the microcontroller to the driver and 
 Entry condition: Test 3 completed successfully and the microcontroller is available to generate the required control signals.
 
 Exit condition: PWM generation, isolation, polarity, and observed switch-node behavior are consistent with the intended driver operation.
+
+> List of materials
+> - [ ] Oscilloscope
+> - [ ] Isolated or differential probes
+> - [ ] Probe accessories and ground references
+> - [ ] Firmware or test code that generates PWM
+> - [ ] Thermal camera
 
 > [!warning]
 > Dangerous test. Make sure you fully understand the setup, probe references, and expected switching behavior before proceeding. Do not perform this test alone.
@@ -345,7 +373,8 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 ![Test 4.4 image anchor](Images/Test_4_4.png)
 
 
-### Test 5 Check the gain and offsets for the measurements
+#-----
+## Test 5 Check the gain and offsets for the measurements
 
 Objective: Validate the measurement block under energized conditions by applying controlled high-voltage DC and AC inputs and confirming that the microcontroller receives correct sensing information.
 
@@ -354,6 +383,14 @@ Entry condition: Tests 1 through 4 completed successfully so that feeder, idle m
 Exit condition: high-voltage DC sensing, AC sensing, and PLL-related measurement behavior are validated without yet running full power conversion.
 
 ![transfos](Images/transfos.png)
+
+> List of materials
+> - [ ] Multimeter
+> - [ ] Oscilloscope
+> - [ ] High-voltage DC source for `400V` injection
+> - [ ] AC source or isolation transformer for `230V`, `50Hz` injection
+> - [ ] Insulated probes and leads
+> - [ ] PPE for high-voltage handling
 
 **System under test placeholder**
 
@@ -412,13 +449,23 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 
 **NOW DISCONNECT THE 230V. WE DO NOT NEED IT TO TEST DC/DC STAGE**
 
-### Test 6 Assemble the two HF transformers
+#-----
+## Test 6 Assemble the two HF transformers
 
 Objective: Validate the DC/DC power stage by preparing the hardware, running controlled open-loop testing, and characterizing regulation and ZVS behavior.
 
 Entry condition: Tests 1 through 5 completed successfully and the feeder, measurement, microcontroller, driver, and energized sensing paths are already validated.
 
 Exit condition: the DC/DC stage can be exercised in a controlled way, reaches the target output, and produces the required characterization data before final transformer closure.
+
+> List of materials
+> - [ ] HF transformers
+> - [ ] Oscilloscope
+> - [ ] Current probe
+> - [ ] `250W` rheostat
+> - [ ] Thermal camera
+> - [ ] Firmware or test code for DCDC open-loop operation
+> - [ ] Probe wires, cables, and insulated tools
 
 **System under test placeholder**
 
@@ -488,6 +535,7 @@ Electronics load disturbs efficiency test.
 ![Test 6.7 image anchor](Images/Test_6_7.png)
 
 
+-----
 ## Test 7 DC/AC testing
 
 Objective: Validate the DC/AC stage as an integrated function by confirming sensing, PLL behavior, relay state, inverter start-up, generated sinewave, and synchronization.
@@ -495,6 +543,15 @@ Objective: Validate the DC/AC stage as an integrated function by confirming sens
 Entry condition: Tests 1 through 6 completed successfully and the DC/DC stage has already been characterized in a controlled way.
 
 Exit condition: the DC/AC stage starts correctly, produces the expected waveform, and synchronizes correctly with the grid-side reference.
+
+> List of materials
+> - [ ] `400V` DC source with current limiting
+> - [ ] `230V` AC source or isolation transformer
+> - [ ] Oscilloscope
+> - [ ] Isolated probes
+> - [ ] Thermal camera
+> - [ ] Cables, connectors, and adaptors
+> - [ ] PPE for energized testing
 
 > [!warning]
 > Dangerous test. Make sure you fully understand the AC and DC sources, probe references, and synchronization measurements before proceeding. Do not perform this test alone.
@@ -552,6 +609,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 ![Sync](Images/SYNC.png)
 
+-----
 ## Test 8 Mount capacitors, and common-mode choke
 
 Objective: Complete the assembly only after the main functional validation steps have succeeded and confirm the prototype is ready for the next level of integration.
@@ -561,6 +619,14 @@ Entry condition: Tests 0 through 7 completed successfully and the major converte
 Exit condition: the final passive parts are mounted and the board is ready for integration testing as a fully assembled prototype.
 
 ![Final assembly](Images/finalASM.png)
+
+> List of materials
+> - [ ] Common-mode choke
+> - [ ] PP capacitors
+> - [ ] Assembly tools
+> - [ ] Fasteners or mounting hardware
+> - [ ] Visual inspection tools
+> - [ ] Multimeter
 
 **System under test placeholder**
 
