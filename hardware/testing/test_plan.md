@@ -15,6 +15,7 @@ DO NOT PROCEED ALONE WITH THIS TEST PROCEDURE.
   - [Testing strategy and progression](#testing-strategy-and-progression)
   - [Test 0 Bare-board safety and worst-case checks](#test-0-bare-board-safety-and-worst-case-checks)
   - [Test 1 Low-side feeder characterization](#test-1-low-side-feeder-characterization)
+    - [Sub-tests Description](#sub-tests-description)
   - [Test 2 Check measurements at idle state](#test-2-check-measurements-at-idle-state)
   - [Test 3 Assemble SPIN board and test relay](#test-3-assemble-spin-board-and-test-relay)
   - [Test 4 Check PWM signals at the switch level](#test-4-check-pwm-signals-at-the-switch-level)
@@ -103,26 +104,27 @@ Each stage validates only the functions that should already be active at that po
 <a id="test-0"></a>
 ## Test 0 Bare-board safety and worst-case checks
 
-![Board as it arrives from PCBA](Images/As_built.png)
 
-**SECURE THE BOARD MECHANICALLY ON AN ISOLATED WORKBENCH BEFORE STARTING**
-
-
-Objective: Validate that the board is electrically safe to power for the first time by checking the main isolation paths before any supply is applied.
-
-Entry condition: board received from PCBA, mechanically secured, and not yet powered.
-
-Exit condition: no critical short or unintended continuity remains on the main power and safety nodes.
+| Item | Description |
+| --- | --- |
+| Objective | Validate that the board is electrically safe to power for the first time by checking the main isolation paths before any supply is applied. |
+| Entry condition | board received from PCBA, mechanically secured, and not yet powered. |
+| Exit condition | no critical short or unintended continuity remains on the main power and safety nodes. |
 
 > List of materials
 > - [ ] Multimeter in ohmmeter mode
 > - [ ] Test leads
 > - [ ] Board support or insulated work surface
 
-**System under test placeholder**
+**System function view for this test**
 
-![System under test placeholder](Images/system_overview.drawio.png)
-_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+![Functions under test](Images/system_test_0.drawio.png)
+_Functions under test : The links between the parts_
+
+**Board during test**
+
+![Board as it arrives from PCBA](Images/As_built.png)
+_View of the board during the test procedure_
 
 **Sub-tests summary**
 
@@ -161,11 +163,11 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 <a id="test-1"></a>
 ## Test 1 Low-side feeder characterization
 
-Objective: Validate the feeder block by proving that the auxiliary rails and local reference are present, regulated, and usable by the rest of the board.
-
-Entry condition: Test 0 completed successfully and the board is safe for first power-up.
-
-Exit condition: all required low-voltage rails and the reference are available, stable, and characterized over the intended input range.
+| Item | Description |
+| --- | --- |
+| Objective | Validate the feeder block by proving that the auxiliary rails and local reference are present, regulated, and usable by the rest of the board. |
+| Entry condition | Test 0 completed successfully and the board is safe for first power-up. |
+| Exit condition | all required low-voltage rails and the reference are available, stable, and characterized over the intended input range. |
 
 > List of materials
 > - [ ] Thermal camera
@@ -177,10 +179,15 @@ Exit condition: all required low-voltage rails and the reference are available, 
 > [!warning]
 > Watch out for hot spots during first energization and during load sweeps.
 
-**System under test placeholder**
+**System function view for this test**
 
-![System under test placeholder](Images/system_overview.drawio.png)
-_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+![Functions under test](Images/system_test_1.drawio.png)
+_Functions under test: both feeder sides._
+
+**Board during test**
+
+![Board during this test](Images/As_built.png)
+_Board during the test procedure: no changes_
 
 **Sub-tests summary**
 
@@ -198,7 +205,20 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 | 1.10 | Characterize 12V rail maximum load capability over input voltage | TO DO | D1.10, D1.11, D1.12 |
 | 1.11 | Characterize 5V rail maximum load capability over input voltage | TO DO | D1.13, D1.14, D1.15 |
 
-**Sub-tests**
+**Deliverables**
+
+| Deliverable | Linked Test | Description | State |
+| --- | --- | --- | --- |
+| D1.09 | 1.9 | Plot of regulated output voltage versus input voltage (`Vout` against `Vin`) | TO DO |
+| D1.10 | 1.10 | Defined admissible voltage drop for the `12V` rail | TO DO |
+| D1.11 | 1.10 | Plot of maximum output power on the `12V` rail versus input voltage (`Pout_max` against `Vin`) | TO DO |
+| D1.12 | 1.10 | Plot of `12V` rail efficiency versus input voltage | TO DO |
+| D1.13 | 1.11 | Defined admissible voltage drop for the `5V` rail | TO DO |
+| D1.14 | 1.11 | Plot of maximum output power on the `5V` rail versus input voltage (`Pout_max` against `Vin`) | TO DO |
+| D1.15 | 1.11 | Plot of `5V` rail efficiency versus input voltage | TO DO |
+
+
+### Sub-tests Description
 
 1.1 - Power the board from the PV input and verify that the `12V_LV` rail starts correctly, reaches its nominal voltage, and remains stable under no-load conditions.
 <!-- What is the input voltage level? -->
@@ -259,28 +279,17 @@ _Vref test points highlighted on the board_
 
 ![Test 1.11 image anchor](Images/Test_1_11.png)
 
-**Deliverables**
-
-| Deliverable | Linked Test | Description | State |
-| --- | --- | --- | --- |
-| D1.09 | 1.9 | Plot of regulated output voltage versus input voltage (`Vout` against `Vin`) | TO DO |
-| D1.10 | 1.10 | Defined admissible voltage drop for the `12V` rail | TO DO |
-| D1.11 | 1.10 | Plot of maximum output power on the `12V` rail versus input voltage (`Pout_max` against `Vin`) | TO DO |
-| D1.12 | 1.10 | Plot of `12V` rail efficiency versus input voltage | TO DO |
-| D1.13 | 1.11 | Defined admissible voltage drop for the `5V` rail | TO DO |
-| D1.14 | 1.11 | Plot of maximum output power on the `5V` rail versus input voltage (`Pout_max` against `Vin`) | TO DO |
-| D1.15 | 1.11 | Plot of `5V` rail efficiency versus input voltage | TO DO |
 
 
 -----
 <a id="test-2"></a>
 ## Test 2 Check measurements at idle state
 
-Objective: Validate the measurement block at low risk by confirming expected offsets and nominal idle readings before any active switching or high-energy conversion test.
-
-Entry condition: Test 1 completed successfully and all required low-voltage rails are available and stable.
-
-Exit condition: the main sensing channels show expected idle values and are ready to be used by the microcontroller in later tests.
+| Item | Description |
+| --- | --- |
+| Objective | Validate the measurement block at low risk by confirming expected offsets and nominal idle readings before any active switching or high-energy conversion test. |
+| Entry condition | Test 1 completed successfully and all required low-voltage rails are available and stable. |
+| Exit condition | the main sensing channels show expected idle values and are ready to be used by the microcontroller in later tests. |
 
 > List of materials
 > - [ ] Current limited DC source
@@ -289,10 +298,16 @@ Exit condition: the main sensing channels show expected idle values and are read
 > - [ ] Probe leads and clips
 > - [ ] Cables and adaptors
 
-**System under test placeholder**
+**System function view for this test**
 
-![System under test placeholder](Images/system_overview.drawio.png)
-_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+![Functions under test](Images/system_test_2.drawio.png)
+_Functions under test: The measurements on both sides._
+
+**Board during test**
+
+![Board during this test](Images/As_built.png)
+_Board during the test procedure: no changes_
+
 
 **Sub-tests summary**
 
@@ -336,13 +351,11 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 <a id="test-3"></a>
 ## Test 3 Assemble SPIN board and test relay
 
-Objective: Validate the microcontroller block by flashing firmware, proving the board boots correctly, and confirming the relay control path behaves as expected.
-
-Entry condition: Tests 1 and 2 completed successfully so that power and idle sensing are already trusted.
-
-Exit condition: the microcontroller can be programmed, boots correctly, and controls the relay in a known safe way.
-
-![Board with SPIN](Images/Spin_ASM.png)
+| Item | Description |
+| --- | --- |
+| Objective | Validate the microcontroller block by flashing firmware, proving the board boots correctly, and confirming the relay control path behaves as expected. |
+| Entry condition | Tests 1 and 2 completed successfully so that power and idle sensing are already trusted. |
+| Exit condition | the microcontroller can be programmed, boots correctly, and controls the relay in a known safe way. |
 
 > List of materials
 > - [ ] SPIN board
@@ -351,10 +364,16 @@ Exit condition: the microcontroller can be programmed, boots correctly, and cont
 > - [ ] Power source for board bring-up
 > - [ ] Multimeter or oscilloscope
 
-**System under test placeholder**
+**System function view for this test**
 
-![System under test placeholder](Images/system_overview.drawio.png)
-_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+![Functions under test](Images/system_test_3.drawio.png)
+_Functions under test: the spin board and the relay of the high voltage power._
+
+**Board during test**
+
+![Board during this test](Images/Spin_ASM.png)
+_Board during the test procedure: spin and relay added_
+
 
 **Sub-tests summary**
 
@@ -383,11 +402,11 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 <a id="test-4"></a>
 ## Test 4 Check PWM signals at the switch level
 
-Objective: Validate the control path from the microcontroller to the driver and into the power stage before proceeding to higher-energy conversion tests.
-
-Entry condition: Test 3 completed successfully and the microcontroller is available to generate the required control signals.
-
-Exit condition: PWM generation, isolation, polarity, and observed switch-node behavior are consistent with the intended driver operation.
+| Item | Description |
+| --- | --- |
+| Objective | Validate the control path from the microcontroller to the driver and into the power stage before proceeding to higher-energy conversion tests. |
+| Entry condition | Test 3 completed successfully and the microcontroller is available to generate the required control signals. |
+| Exit condition | PWM generation, isolation, polarity, and observed switch-node behavior are consistent with the intended driver operation. |
 
 > List of materials
 > - [ ] Oscilloscope
@@ -398,11 +417,18 @@ Exit condition: PWM generation, isolation, polarity, and observed switch-node be
 
 > [!warning]
 > Dangerous test. Make sure you fully understand the setup, probe references, and expected switching behavior before proceeding. Do not perform this test alone.
+> The `VBus` will be energized via the boost converter. Make sure you take all the precautions to stay safe.
 
-**System under test placeholder**
+**System function view for this test**
 
-![System under test placeholder](Images/system_overview.drawio.png)
-_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+![Functions under test](Images/system_test_4.drawio.png)
+_Functions under test: The driver_
+
+**Board during test**
+
+![Board during this test](Images/board_spin_relay.png)
+_Board during the test procedure: no change_
+
 
 **Sub-tests summary**
 
@@ -432,17 +458,16 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 ![Test 4.4 image anchor](Images/Test_4_4.png)
 
 
-#-----
+----
 <a id="test-5"></a>
 ## Test 5 Check the gain and offsets for the measurements
 
-Objective: Validate the measurement block under energized conditions by applying controlled high-voltage DC and AC inputs and confirming that the microcontroller receives correct sensing information.
+| Item | Description |
+| --- | --- |
+| Objective | Validate the measurement block under energized conditions by applying controlled high-voltage DC and AC inputs and confirming that the microcontroller receives correct sensing information. |
+| Entry condition | Tests 1 through 4 completed successfully so that feeder, idle measurements, microcontroller, and driver behavior are already understood. |
+| Exit condition | high-voltage DC sensing, AC sensing, and PLL-related measurement behavior are validated without yet running full power conversion. |
 
-Entry condition: Tests 1 through 4 completed successfully so that feeder, idle measurements, microcontroller, and driver behavior are already understood.
-
-Exit condition: high-voltage DC sensing, AC sensing, and PLL-related measurement behavior are validated without yet running full power conversion.
-
-![transfos](Images/transfos.png)
 
 > List of materials
 > - [ ] Multimeter
@@ -452,30 +477,43 @@ Exit condition: high-voltage DC sensing, AC sensing, and PLL-related measurement
 > - [ ] Insulated probes and leads
 > - [ ] PPE for high-voltage handling
 
-**System under test placeholder**
+> [!warning]
+> Dangerous test. Make sure you fully understand the setup, probe references, and expected switching behavior before proceeding. Do not perform this test alone.
+> The `VBus` will be energized via the boost converter. Make sure you take all the precautions to stay safe.
 
-![System under test placeholder](Images/system_overview.drawio.png)
-_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+**System function view for this test**
+
+![Functions under test](Images/system_test_5.drawio.png)
+_Functions under test: measurement verification_
+
+**Board during test**
+
+![Board during this test](Images/board_spin_relay.png)
+_Board during the test procedure: changes to be made on the bottom_
+
 
 **Sub-tests summary**
 
 | Test | Title | State |
 | --- | --- | --- |
-| 5.1 | Isolate DC sensor input from DC/AC stage | TO DO |
-| 5.2 | Verify DC/AC to DC/DC isolation continuity | TO DO |
-| 5.3 | Inject 400V on capacitor bank | TO DO |
-| 5.4 | Verify 400V VDc bus sensor reading | TO DO |
-| 5.5 | Inject 230V AC input | TO DO |
-| 5.6 | Verify 230VRms and 50Hz sensor reading | TO DO |
-| 5.7 | Check PLL behavior | TO DO |
+| 5.1 | Test the low side stage voltage measurement | TO DO |
+| 5.1 | Test the low side stage current measurement | TO DO |
+| 5.3 | Test the high side DC measurement | TO DO |
+| 5.5 | Test the high side AC voltage measurement | TO DO |
+| 5.5 | Test the high side AC current measurement | TO DO |
+| 5.7 | Test the PLL behavior | TO DO |
 
 **Sub-tests**
 
-5.1 - Isolate the last resistance from the DC sensor so it is connected to the output of the DC/DC stage. This prepares the energized sensing test while keeping the DC/DC and DC/AC stages separated.
+5.1 - Calibrate the low side voltage measurement by injecting a voltage on the PV side. 
 
-![Test 5.1 image anchor](Images/Test_5_1.png)
+![Test 5.1 image anchor](Images/system_test_5_meas_DC_low.drawio.png)
 
-This way, the DCDC stage is fully disconnected from the DC/AC stage and you can test the DC/DC stage with more peace of mind.
+To do so, inject a voltage on the low side PV connector while observing it with a voltmeter and measuring the raw data from the USB.
+
+![Test 5.1 image anchor](Images/Low_side_V_injection.drawio.png)
+
+Fill up a table, calculate the gain and offset of the measurement. 
 
 5.2 - Check that there is no more continuity between DC/AC input and DC/DC output before applying energized stimuli.
 
@@ -509,15 +547,15 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 
 **NOW DISCONNECT THE 230V. WE DO NOT NEED IT TO TEST DC/DC STAGE**
 
-#-----
+----
 <a id="test-6"></a>
 ## Test 6 Assemble the two HF transformers
 
-Objective: Validate the DC/DC power stage by preparing the hardware, running controlled open-loop testing, and characterizing regulation and ZVS behavior.
-
-Entry condition: Tests 1 through 5 completed successfully and the feeder, measurement, microcontroller, driver, and energized sensing paths are already validated.
-
-Exit condition: the DC/DC stage can be exercised in a controlled way, reaches the target output, and produces the required characterization data before final transformer closure.
+| Item | Description |
+| --- | --- |
+| Objective | Validate the DC/DC power stage by preparing the hardware, running controlled open-loop testing, and characterizing regulation and ZVS behavior. |
+| Entry condition | Tests 1 through 5 completed successfully and the feeder, measurement, microcontroller, driver, and energized sensing paths are already validated. |
+| Exit condition | the DC/DC stage can be exercised in a controlled way, reaches the target output, and produces the required characterization data before final transformer closure. |
 
 > List of materials
 > - [ ] HF transformers
@@ -528,10 +566,10 @@ Exit condition: the DC/DC stage can be exercised in a controlled way, reaches th
 > - [ ] Firmware or test code for DCDC open-loop operation
 > - [ ] Probe wires, cables, and insulated tools
 
-**System under test placeholder**
+**System function view for this test**
 
-![System under test placeholder](Images/system_overview.drawio.png)
-_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+![Functions under test](Images/system_test_1.drawio.png)
+_Functions under test: both feeder sides._
 
 **Sub-tests summary**
 
@@ -600,11 +638,11 @@ Electronics load disturbs efficiency test.
 <a id="test-7"></a>
 ## Test 7 DC/AC testing
 
-Objective: Validate the DC/AC stage as an integrated function by confirming sensing, PLL behavior, relay state, inverter start-up, generated sinewave, and synchronization.
-
-Entry condition: Tests 1 through 6 completed successfully and the DC/DC stage has already been characterized in a controlled way.
-
-Exit condition: the DC/AC stage starts correctly, produces the expected waveform, and synchronizes correctly with the grid-side reference.
+| Item | Description |
+| --- | --- |
+| Objective | Validate the DC/AC stage as an integrated function by confirming sensing, PLL behavior, relay state, inverter start-up, generated sinewave, and synchronization. |
+| Entry condition | Tests 1 through 6 completed successfully and the DC/DC stage has already been characterized in a controlled way. |
+| Exit condition | the DC/AC stage starts correctly, produces the expected waveform, and synchronizes correctly with the grid-side reference. |
 
 > List of materials
 > - [ ] `400V` DC source with current limiting
@@ -620,10 +658,10 @@ Exit condition: the DC/AC stage starts correctly, produces the expected waveform
 
 ![DCAC stage](Images/DCACsupply.png)
 
-**System under test placeholder**
+**System function view for this test**
 
-![System under test placeholder](Images/system_overview.drawio.png)
-_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+![Functions under test](Images/system_test_1.drawio.png)
+_Functions under test: both feeder sides._
 
 **Sub-tests summary**
 
@@ -675,11 +713,11 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 <a id="test-8"></a>
 ## Test 8 Mount capacitors, and common-mode choke
 
-Objective: Complete the assembly only after the main functional validation steps have succeeded and confirm the prototype is ready for the next level of integration.
-
-Entry condition: Tests 0 through 7 completed successfully and the major converter functions have already been validated.
-
-Exit condition: the final passive parts are mounted and the board is ready for integration testing as a fully assembled prototype.
+| Item | Description |
+| --- | --- |
+| Objective | Complete the assembly only after the main functional validation steps have succeeded and confirm the prototype is ready for the next level of integration. |
+| Entry condition | Tests 0 through 7 completed successfully and the major converter functions have already been validated. |
+| Exit condition | the final passive parts are mounted and the board is ready for integration testing as a fully assembled prototype. |
 
 ![Final assembly](Images/finalASM.png)
 
@@ -691,10 +729,10 @@ Exit condition: the final passive parts are mounted and the board is ready for i
 > - [ ] Visual inspection tools
 > - [ ] Multimeter
 
-**System under test placeholder**
+**System function view for this test**
 
-![System under test placeholder](Images/system_overview.drawio.png)
-_System-under-test placeholder. Duplicate this figure and grey out blocks not under test for the final version._
+![Functions under test](Images/system_test_1.drawio.png)
+_Functions under test: both feeder sides._
 
 **Sub-tests summary**
 
