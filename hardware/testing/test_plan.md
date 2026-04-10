@@ -6,7 +6,25 @@ THIS IS INDENDED FOR TRAINED AND SKILLED POWER ELECTRONICS TECHNICIANS. DO NOT A
 
 DO NOT PROCEED ALONE WITH THIS TEST PROCEDURE.
 
+---
+## Table of contents
 
+- [Commisionning and test plan for the first prototypes.](#commisionning-and-test-plan-for-the-first-prototypes)
+  - [Table of contents](#table-of-contents)
+  - [Overall system functional blocks](#overall-system-functional-blocks)
+  - [Testing strategy and progression](#testing-strategy-and-progression)
+  - [Test 0 Bare-board safety and worst-case checks](#test-0-bare-board-safety-and-worst-case-checks)
+  - [Test 1 Low-side feeder characterization](#test-1-low-side-feeder-characterization)
+  - [Test 2 Check measurements at idle state](#test-2-check-measurements-at-idle-state)
+  - [Test 3 Assemble SPIN board and test relay](#test-3-assemble-spin-board-and-test-relay)
+  - [Test 4 Check PWM signals at the switch level](#test-4-check-pwm-signals-at-the-switch-level)
+  - [Test 5 Check the gain and offsets for the measurements](#test-5-check-the-gain-and-offsets-for-the-measurements)
+  - [Test 6 Assemble the two HF transformers](#test-6-assemble-the-two-hf-transformers)
+  - [Test 7 DC/AC testing](#test-7-dcac-testing)
+  - [Test 8 Mount capacitors, and common-mode choke](#test-8-mount-capacitors-and-common-mode-choke)
+
+
+---
 ## Overall system functional blocks
 
 The micro-inverter is a cascaded power converter made of a DC/DC stage and a DC/AC stage.
@@ -24,19 +42,51 @@ A power converter can be structured around the five sub-blocks shown below:
 
 ![Five sub-blocks of a power converter](Images/power_converter.drawio.png)
 
+---
+## Testing strategy and progression
+
 The progression used in this document is:
 
-`bare-board safety -> feeder/power-up -> idle measurements -> microcontroller bring-up -> driver validation -> energized measurement validation -> DC/DC power stage -> DC/AC stage -> final assembly`
+```mermaid
+flowchart TD
+    A["Test 0<br/>Check for worst-case scenario"] --> B["Test 1<br/>Low-side feeder characterization"]
+    B --> C["Test 2<br/>Check measurements at idle state"]
+    C --> D["Test 3<br/>Assemble SPIN board and test relay"]
+    D --> E["Test 4<br/>Check PWM signals at the switch level"]
+    E --> F["Test 5<br/>Check the gain and offsets for the measurements"]
+    F --> G["Test 6<br/>Assemble the two HF transformers"]
+    G --> H["Test 7<br/>DC/AC testing"]
+    H --> I["Test 8<br/>Mount capacitors and common-mode choke"]
+
+    classDef todo fill:#fbeaea,stroke:#c1121f,color:#7a0f17,stroke-width:2px;
+    classDef ongoing fill:#fff4d6,stroke:#d97706,color:#8a4b00,stroke-width:2px;
+    classDef done fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20,stroke-width:2px;
+
+    class A todo;
+    class B todo;
+    class C todo;
+    class D todo;
+    class E todo;
+    class F todo;
+    class G todo;
+    class H todo;
+    class I todo;
+
+    click A href "(#overall-system-functional-blocks)" _self
+    click B href "#test-1" "Go to Test 1"
+    click C href "#test-2" "Go to Test 2"
+    click D href "#test-3" "Go to Test 3"
+    click E href "#test-4" "Go to Test 4"
+    click F href "#test-5" "Go to Test 5"
+    click G href "#test-6" "Go to Test 6"
+    click H href "#test-7" "Go to Test 7"
+    click I href "#test-8" "Go to Test 8"
+```
+
 
 Each stage validates only the functions that should already be active at that point. This reduces risk, makes failures easier to localize, and provides a clear gate before moving to the next level of integration.
 
-
-## State of the bare board before final assembly of sub-pcbs and non COTS parts
-
-![Board as it arrives from PCBA](Images/As_built.png)
-
-**SECURE THE BOARD MECHANICALLY ON AN ISOLATED WORKBENCH BEFORE STARTING**
-
+ 
 | Test | Status | Title | Objective |
 | --- | --- | --- | --- |
 | 0   |     | Check for worst-case scenario | Validate bare-board isolation and confirm the board can be powered safely. |
@@ -49,8 +99,14 @@ Each stage validates only the functions that should already be active at that po
 | 7   |     | DC/AC testing | Validate full DC/AC stage operation, synchronization, and generated sinewave behavior. |
 | 8   |     | Mount capacitors and common-mode choke | Close the prototype assembly after the functional validation gates have been passed. |
 
-#-----
+-----
+<a id="test-0"></a>
 ## Test 0 Bare-board safety and worst-case checks
+
+![Board as it arrives from PCBA](Images/As_built.png)
+
+**SECURE THE BOARD MECHANICALLY ON AN ISOLATED WORKBENCH BEFORE STARTING**
+
 
 Objective: Validate that the board is electrically safe to power for the first time by checking the main isolation paths before any supply is applied.
 
@@ -101,8 +157,8 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 ![L, N and PE connected to the board](Images/L_N_PE_test_points.png)
 
 
-----
 -----
+<a id="test-1"></a>
 ## Test 1 Low-side feeder characterization
 
 Objective: Validate the feeder block by proving that the auxiliary rails and local reference are present, regulated, and usable by the rest of the board.
@@ -217,6 +273,7 @@ _Vref test points highlighted on the board_
 
 
 -----
+<a id="test-2"></a>
 ## Test 2 Check measurements at idle state
 
 Objective: Validate the measurement block at low risk by confirming expected offsets and nominal idle readings before any active switching or high-energy conversion test.
@@ -276,6 +333,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 
 -----
+<a id="test-3"></a>
 ## Test 3 Assemble SPIN board and test relay
 
 Objective: Validate the microcontroller block by flashing firmware, proving the board boots correctly, and confirming the relay control path behaves as expected.
@@ -322,6 +380,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 
 -----
+<a id="test-4"></a>
 ## Test 4 Check PWM signals at the switch level
 
 Objective: Validate the control path from the microcontroller to the driver and into the power stage before proceeding to higher-energy conversion tests.
@@ -374,6 +433,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 
 
 #-----
+<a id="test-5"></a>
 ## Test 5 Check the gain and offsets for the measurements
 
 Objective: Validate the measurement block under energized conditions by applying controlled high-voltage DC and AC inputs and confirming that the microcontroller receives correct sensing information.
@@ -450,6 +510,7 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 **NOW DISCONNECT THE 230V. WE DO NOT NEED IT TO TEST DC/DC STAGE**
 
 #-----
+<a id="test-6"></a>
 ## Test 6 Assemble the two HF transformers
 
 Objective: Validate the DC/DC power stage by preparing the hardware, running controlled open-loop testing, and characterizing regulation and ZVS behavior.
@@ -536,6 +597,7 @@ Electronics load disturbs efficiency test.
 
 
 -----
+<a id="test-7"></a>
 ## Test 7 DC/AC testing
 
 Objective: Validate the DC/AC stage as an integrated function by confirming sensing, PLL behavior, relay state, inverter start-up, generated sinewave, and synchronization.
@@ -610,6 +672,7 @@ _System-under-test placeholder. Duplicate this figure and grey out blocks not un
 ![Sync](Images/SYNC.png)
 
 -----
+<a id="test-8"></a>
 ## Test 8 Mount capacitors, and common-mode choke
 
 Objective: Complete the assembly only after the main functional validation steps have succeeded and confirm the prototype is ready for the next level of integration.
