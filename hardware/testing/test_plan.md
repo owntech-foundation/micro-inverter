@@ -20,7 +20,7 @@ DO NOT PROCEED ALONE WITH THIS TEST PROCEDURE.
   - [Test 3 Assemble SPIN board and test relay](#test-3-assemble-spin-board-and-test-relay)
   - [Test 4 Check PWM signals at the switch level](#test-4-check-pwm-signals-at-the-switch-level)
   - [Test 5 Check the gain and offsets for the measurements](#test-5-check-the-gain-and-offsets-for-the-measurements)
-  - [Test 6 Assemble the two HF transformers](#test-6-assemble-the-two-hf-transformers)
+  - [Test 6 Validate the DC/DC power stage](#test-6-validate-the-dcdc-power-stage)
   - [Test 7 DC/AC testing](#test-7-dcac-testing)
   - [Test 8 Mount capacitors, and common-mode choke](#test-8-mount-capacitors-and-common-mode-choke)
 
@@ -470,12 +470,13 @@ _Board during the test procedure: no change_
 
 
 > List of materials
-> - [ ] Multimeter
+> - [ ] 2 Multimeters
 > - [ ] Oscilloscope
 > - [ ] High-voltage DC source for `400V` injection
 > - [ ] AC source or isolation transformer for `230V`, `50Hz` injection
 > - [ ] Insulated probes and leads
 > - [ ] PPE for high-voltage handling
+> - [ ] A code that shows the raw data measurements from the micro-controller
 
 > [!warning]
 > Dangerous test. Make sure you fully understand the setup, probe references, and expected switching behavior before proceeding. Do not perform this test alone.
@@ -494,62 +495,99 @@ _Board during the test procedure: changes to be made on the bottom_
 
 **Sub-tests summary**
 
-| Test | Title | State |
-| --- | --- | --- |
-| 5.1 | Test the low side stage voltage measurement | TO DO |
-| 5.1 | Test the low side stage current measurement | TO DO |
-| 5.3 | Test the high side DC measurement | TO DO |
-| 5.5 | Test the high side AC voltage measurement | TO DO |
-| 5.5 | Test the high side AC current measurement | TO DO |
-| 5.7 | Test the PLL behavior | TO DO |
+| Test | Title | State | Deliverable(s) |
+| --- | --- | --- | --- |
+| 5.1 | Test the low side stage voltage measurement | TO DO | D5.01 |
+| 5.2 | Test the first low side stage current measurement | TO DO | D5.02 |
+| 5.3 | Test the second low side stage current measurement | TO DO | D5.03 |
+| 5.4 | Test the high side DC measurement | TO DO | D5.04 |
+| 5.5 | Test the high side AC voltage measurement | TO DO | D5.05 |
+| 5.6 | Test the high side AC current measurement | TO DO | D5.06 |
+| 5.7 | Test the PLL behavior | TO DO | - |
 
 **Sub-tests**
 
 5.1 - Calibrate the low side voltage measurement by injecting a voltage on the PV side. 
 
-![Test 5.1 image anchor](Images/system_test_5_meas_DC_low.drawio.png)
+![Test 5.1 image anchor](Images/system_test_5_2_meas_DC_low.drawio.png)
 
 To do so, inject a voltage on the low side PV connector while observing it with a voltmeter and measuring the raw data from the USB.
 
-![Test 5.1 image anchor](Images/Low_side_V_injection.drawio.png)
+![Test 5.1 image anchor](Images/test_5_1_Low_side_V_injection.drawio.png)
 
-Fill up a table, calculate the gain and offset of the measurement. 
+Fill up a table, calculate the gain and offset of the measurement, and store the identified transfer function for `VPV` in **D5.01**.
 
-5.2 - Check that there is no more continuity between DC/AC input and DC/DC output before applying energized stimuli.
+5.2 - Calibrate the first low-side current measurement. To do so, a resistor will be connected to the output of the first boost `LEG1`. The duty cycle will be controlled in open-loop which will inject a DC current. Monitor the applied current with an ampmeter and recording the raw value reported over USB.
 
-![Test 5.2 image anchor](Images/Test_5_2.png)
+![Test 5.2 image anchor](Images/system_test_5_2_meas_DC_low.drawio.png)
 
-![separation DC bus](Images/DCBusSeparation.png)
+Use several current setpoints **from 0 to 8A**, fill up a calibration table, then calculate the gain and offset of the `I1` measurement and store them in **D5.02**.
 
-> [!warning]
-> Dangerous test. Make sure you fully understand the setup, PPE, isolation, and discharge procedure before injecting high voltage. Do not perform this test alone.
+![Test 5.2 wiring diagram](Images/test_5_2_Low_side_V_injection.drawio.png)
 
-5.3 - Inject `400V` on the capacitor bank as shown below in order to energize the DC sensing path.
+5.3 - Calibrate the second low-side current measurement. To do so, a resistor will be connected to the output of the second boost `LEG2`. The duty cycle will be controlled in open-loop which will inject a DC current. Monitor the applied current with an ampmeter and recording the raw value reported over USB.
 
-![Test 5.3 image anchor](Images/Test_5_3.png)
+![Test 5.3 system view](Images/system_test_5_2_meas_DC_low.drawio.png)
 
-5.4 - Make sure the microcontroller reads `400V` on the `VDc` bus sensor.
+Use current setpoints from **0 to 8 A**, fill up a calibration table, then calculate the gain and offset of the `I2` measurement and store them in **D5.03**.
 
-![400V](Images/Inject400.png)
+![Test 5.3 wiring diagram](Images/test_5_3_Low_side_V_injection.drawio.png)
+
+5.4 - Calibrate the high-side DC voltage measurement. To do so, injecting a known DC voltage on the bus, observing the actual bus voltage with a high-voltage voltmeter. Recording the raw data reported by the micro-controller.
 
 > [!warning]
 > Dangerous test. Make sure you fully understand the AC injection setup, isolation, and probe references before proceeding. Do not perform this test alone.
 
-5.5 - Inject `230V`, `50Hz` as shown below in order to energize the AC sensing path.
 
-![Test 5.5 image anchor](Images/Test_5_5.png)
+![Test 5.4 system view](Images/system_test_5_4_meas_DC_high.drawio.png)
 
-5.6 - Make sure the microcontroller reads `230VRms` and `50Hz` on the AC sensing path.
+Sweep enough operating points **from 10V to 400V** to identify the parameters of the `VBus` measurement, then calculate the gain and offset and store them in **D5.04**.
 
-5.7 - Check the PLL behavior using the injected AC input.
+![Test 5.4 wiring diagram](Images/test_5_4_High_side_V_injection.drawio.png)
 
-![230V](Images/Inject230.png)
 
-**NOW DISCONNECT THE 230V. WE DO NOT NEED IT TO TEST DC/DC STAGE**
+5.5 - Calibrate the high-side AC voltage measurement. To do so, inject a known AC voltage, measuring the applied `Vac` with appropriate external instrumentation, and recording the raw measurement values reported by the micro-controller.
+
+![Test 5.5 system view](Images/system_test_5_5_meas_architecture_AC_high.drawio.png)
+
+Sweep from **0 to 300VAC peak** and from **0 to 200Hz**. Calculate the gain and offset of the `Vac` measurement and store them in **D5.05**. Validate that the frequency as well. 
+
+![Test 5.5 wiring diagram](Images/test_5_5_High_side_V_AC_injection.drawio.png)
+
+
+5.6 - Calibrate the high-side AC current measurement. To do so, use the same voltage source setup and connect a resistor on the pad of the missing inductor. This will force forcing an AC current to flow in the sensing path. Measure that current with appropriate external instrumentation, and record the raw value reported by the micro-controller.
+
+![Test 5.6 system view](Images/system_test_5_5_meas_architecture_AC_high.drawio.png)
+
+Use several operating points if the setup allows it, then calculate the gain and offset of the `iAC` measurement and store them in **D5.06**.
+
+![Test 5.6 wiring diagram](Images/test_5_6_High_side_i_AC_injection.drawio.png)
+
+
+5.7 - Verify PLL measurement and estimation by the micro-controller. To do so, it will be necessary to use a dedicated micro-controller firmware that calculates the PLL using the SOGI method. Use the injected AC input after the `Vac` calibration is complete. Confirm that the estimated grid frequency and phase are stable, coherent with the applied waveform, and usable for the later DC/AC tests.
+
+![Test 5.6 system view](Images/system_test_5_5_meas_architecture_AC_high.drawio.png)
+
+The wiring diagram for this test is the same as for the voltage calibration. 
+Sweep between **10Hz to 200Hz** and validate that the PLL can measure them. 
+
+![Test 5.7 wiring diagram](Images/test_5_5_High_side_V_AC_injection.drawio.png)
+
+
+**Deliverables**
+
+| Deliverable | Linked Test | Parameter | Description | State |
+| --- | --- | --- | --- | --- |
+| D5.01 | 5.1 | `VPV` | Gain and offset identified for the low-side PV voltage measurement | TO DO |
+| D5.02 | 5.2 | `I1` | Gain and offset identified for the first low-side current measurement | TO DO |
+| D5.03 | 5.3 | `I2` | Gain and offset identified for the second low-side current measurement | TO DO |
+| D5.04 | 5.4 | `VBus` | Gain and offset identified for the high-side DC bus voltage measurement | TO DO |
+| D5.05 | 5.5 | `Vac` | Gain and offset identified for the high-side AC voltage measurement | TO DO |
+| D5.06 | 5.6 | `iAC` | Gain and offset identified for the high-side AC current measurement | TO DO |
 
 ----
 <a id="test-6"></a>
-## Test 6 Assemble the two HF transformers
+## Test 6 Validate the DC/DC power stage
 
 | Item | Description |
 | --- | --- |
@@ -565,17 +603,25 @@ Fill up a table, calculate the gain and offset of the measurement.
 > - [ ] Thermal camera
 > - [ ] Firmware or test code for DCDC open-loop operation
 > - [ ] Probe wires, cables, and insulated tools
+> - [ ] Fast prototyping board
 
 **System function view for this test**
 
-![Functions under test](Images/system_test_1.drawio.png)
+![Functions under test](Images/system_test_6.drawio.png)
 _Functions under test: both feeder sides._
+
+
+**Board during test**
+
+![transfos](Images/test_6_transfos_change.drawio.png)
+_Board during the test procedure: transformers will be added_
+
 
 **Sub-tests summary**
 
 | Test | Title | State |
 | --- | --- | --- |
-| 6.1 | Add current-probe series wire | TO DO |
+| 6.1 | Special transformer assembly | TO DO |
 | 6.2 | Install 250W rheostat on 400V bus | TO DO |
 | 6.3 | Run DCDC open-loop test code | TO DO |
 | 6.4 | Raise duty cycle to 400V output | TO DO |
@@ -585,45 +631,40 @@ _Functions under test: both feeder sides._
 
 **Sub-tests**
 
-6.1 - **DO add a series wire between the primary side and MOSFETs to place an oscilloscope current probe**. This setup is required before any actuation because the ZVS verification depends on it.
+6.1 - It is necessary to verify the Zero-Voltage Switching (ZVS) behaviour of the DC/DC stage. To to so, it is necessary to observe the current in the primary of the transformer as shown in the image below. 
 
-![Test 6.1 image anchor](Images/Test_6_1.png)
-
-This is important to test ZVS functionality.
-
-![Test 6.1 context image anchor](Images/Test_6_1_context.png)
+![Test 6.1 schematic](Images/test_6_ZVS_transformer_path.drawio.png)
+_Schematic view of the current probe insertion_
 
 
-![transfos](Images/transfos.png)
+This requires mounting the transformer on top of a support, under which an oscilloscope probe can be connected.
+The support should provide an space of 20mm for the current probe to be inserted.
+
+![Test 6.1 transformer mount](Images/test_6_ZVS_transformer_mount.drawio.png)
+_Side view of the board with the transformer mounted above._ 
+
+
+
+
+6.2 - Add a `250W` rheostat rated for `230V` between `400V-` and `400V+` so the DC/DC output can be tested under a controlled load.
+
 
 > [!warning]
 > Dangerous test. Make sure you fully understand the setup, the expected converter behavior, and the discharge procedure before energizing the stage. Do not perform this test alone.
+> **Make sure you have a thermal camera when doing first tests**
 
-**Make sure you have a thermal camera when doing first tests**
+![Test 6.2 image anchor](Images/test_6_2_transfos_.load.drawio.png)
 
-6.2 - Add a `250W` rheostat rated for `230V` between `400V-` and `400V+` so the DC/DC output can be exercised under controlled load.
-
-![Test 6.2 image anchor](Images/Test_6_2.png)
-
-Electronics load disturbs efficiency test.
-
-![400V](Images/Inject400.png)
-
-6.3 - Run the DCDC test code. That is the code with the open-loop boost and variable dead-time.
-
-![Test 6.3 image anchor](Images/Test_6_3.png)
+6.3 - Load the DC/DC test code that has been previously tested with a transformer for the Twist board and is available at the [Step_UP_DC_DC](https://github.com/luizvilla/Core/tree/StepUp_DC_DC) branch of Luiz Villa's github. 
 
 6.4 - Increase slowly the duty cycle until the converter reaches `400V` on the output.
 
-![Test 6.4 image anchor](Images/Test_6_4.png)
-
 6.5 - Verify that the DC/DC stage stabilizes the output voltage at `400V`.
-
-![Test 6.5 image anchor](Images/Test_6_5.png)
 
 6.6 - Follow the test procedure to verify that the converter operates under ZVS.
 
-![Test 6.6 image anchor](Images/Test_6_6.png)
+
+<!-- What is the test procedure? -->
 
 **Retrieve datapoints and publish a plot with P_ZVS against Vin**
 
@@ -631,7 +672,7 @@ Electronics load disturbs efficiency test.
 
 6.7 - When characterization is properly done and data properly saved, remove the wire and install the transformer completely.
 
-![Test 6.7 image anchor](Images/Test_6_7.png)
+![Test 6.7 Transformer final mount](Images/test_6_ZVS_transformer_final_mount.drawio.png)
 
 
 -----
