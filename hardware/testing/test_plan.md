@@ -22,7 +22,7 @@ DO NOT PROCEED ALONE WITH THIS TEST PROCEDURE.
   - [Test 5 Check the gain and offsets for the measurements](#test-5-check-the-gain-and-offsets-for-the-measurements)
   - [Test 6 Validate the DC/DC power stage](#test-6-validate-the-dcdc-power-stage)
   - [Test 7 DC/AC testing](#test-7-dcac-testing)
-  - [Test 8 Mount capacitors, and common-mode choke](#test-8-mount-capacitors-and-common-mode-choke)
+  - [Test 8 Full system test](#test-8-full-system-test)
 
 
 ---
@@ -686,6 +686,7 @@ _Side view of the board with the transformer mounted above._
 | Exit condition | the DC/AC stage starts correctly, produces the expected waveform, and synchronizes correctly with the grid-side reference. |
 
 > List of materials
+> - [ ] `20V` DC source with current limiting to power the converter
 > - [ ] `400V` DC source with current limiting
 > - [ ] `230V` AC source or isolation transformer
 > - [ ] Oscilloscope
@@ -778,13 +779,13 @@ Once in sync, connect the relay and inject a small amount of power into the syst
 
 -----
 <a id="test-8"></a>
-## Test 8 Mount capacitors, and common-mode choke
+## Test 8 Full system test
 
 | Item | Description |
 | --- | --- |
-| Objective | Complete the assembly only after the main functional validation steps have succeeded and confirm the prototype is ready for the next level of integration. |
+| Objective | Complete the assembly only after the main functional validation steps have succeeded and confirm the prototype works as intended. |
 | Entry condition | Tests 0 through 7 completed successfully and the major converter functions have already been validated. |
-| Exit condition | the final passive parts are mounted and the board is ready for integration testing as a fully assembled prototype. |
+| Exit condition | The capacitor banck is mounted and the board is ready for integration testing as a fully assembled prototype. |
 
 ![Final assembly](Images/finalASM.png)
 
@@ -798,22 +799,71 @@ Once in sync, connect the relay and inject a small amount of power into the syst
 
 **System function view for this test**
 
-![Functions under test](Images/system_test_1.drawio.png)
-_Functions under test: both feeder sides._
+![Functions under test](Images/system_test_8.drawio.png)
+_Functions under test: final system assembly test._
+
+**Board during test**
+
+![transfos](Images/test_8_1_board_state.drawio.png)
+_Board during the test procedure: Adding the final part of the converter: the capacitors of the DC bus_
+
 
 **Sub-tests summary**
 
 | Test | Title | State |
 | --- | --- | --- |
-| 8.1 | Mount common-mode choke and PP capacitors | TO DO |
-| 8.2 | Confirm readiness for integration test | TO DO |
+| 8.1 | Add a bleed resistor to the capacitor bank | TO DO |
+| 8.2 | Solder the capacitor bank + resistor to the micro-verter and test the `VBus` | TO DO |
+| 8.3 | Test converter in grid-forming with a resistive load | TO DO |
+| 8.4 | Inject power into the local grid using a low-voltage DC-source | TO DO |
+| 8.5 | Inject power into the local grid using a photovoltaic module with a fixed setpoint | TO DO |
+| 8.6 | Inject power into the local grid using a photovoltaic module with an MPPT | TO DO |
 
 **Sub-tests**
 
-8.1 - Mount common-mode choke and PP capacitors after the earlier functional gates have been passed.
+8.1 - To test the fully assembled system, it is necessary to add the PP capacitor bank to the DC bus. 
 
-![Test 8.1 image anchor](Images/Test_8_1.png)
+> [!Warning] CURRENT ISSUE: 
+> The capacitor bank does not have a bleed resistor, as noted by [Stevie in a corresponding issue](https://github.com/owntech-foundation/micro-inverter/issues/21). 
+> You will need to add one to ensure the capacitor bank discharges over time!   
 
-8.2 - Confirm that the board is ready for integration testing.
+The bleed resistor should be added as shown below. 
 
-![Test 8.2 image anchor](Images/Test_8_2.png)
+![Test 8.1 capacitor bank](Images/test_8_1_bleed_resistor.drawio.png)
+
+The capacitor bank value is 120uF. The bleed resistor value should be around 1M$\Omega$ to 300k$\Omega$ to provide the following discharge times: 
+
+$$ t_{RC} = R \cdot C  = 1M*10^3 \cdot 120 *10^-6  = 120s$$
+
+which gives a total time of $3 t_{RC} = 360s$
+
+$$ t_{RC} = R \cdot C  = 330*10^3 \cdot 120 *10^-6 = 39.6s $$
+
+which gives a total time of $3 t_{RC} = 120s$
+
+Test this time constant by charging the capacitor bank, cutting the voltage and then monitoring its output voltage.
+
+![Test 8.1 capacitor bank discharge time](Images/test_8_1_bleed_resistor_test.drawio.png)
+
+8.2 - Solder the capacitor bank with its bleed resistor to the system as in the figure below and test the boost converter can reach `400V`. 
+
+![Test 8.2 wiring diagram](Images/test_8_1_board_state.drawio.png)
+
+Upload the same boost converter code. Test it by raising the `VBus` voltage up to 400V 
+
+![Test 8.2 wiring diagram](Images/test_8_2_board_state.drawio.png)
+
+8.3 - Inject power into a resistor using a grid-forming code. Validate that the `VBus` ripple is within the accepted range. 
+
+![Test 8.3 wiring diagram](Images/test_8_3_board_state.drawio.png)
+
+8.4 - Make sure the relay is open. Connect the micro-inverter to the local grid via an appropriate protection such as a circuit breaker. Validate that the system can inject power into the local grid.  
+
+![Test 8.4 wiring diagram](Images/test_8_4_board_state.drawio.png)
+
+8.5 - Make sure the relay is open. Connect a PV module in the input of the micro-inverter. Validate that the system can inject power into the local grid for a fixed output power.  
+
+![Test 8.5 wiring diagram](Images/test_8_5_board_state.drawio.png)
+
+8.6 - Make sure the relay is open. Connect a PV module in the input of the micro-inverter. Upload an MPPT code into the micro-inverter. Validate that the micro-inverter can inject power into the local grid while maximizing power from the PV module.  
+
