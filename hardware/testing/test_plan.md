@@ -371,7 +371,7 @@ _Functions under test: the spin board and the relay of the high voltage power._
 
 **Board during test**
 
-![Board during this test](Images/Spin_ASM.png)
+![Board during this test](Images/test_3_board.drawio.png)
 _Board during the test procedure: spin and relay added_
 
 
@@ -697,58 +697,84 @@ _Side view of the board with the transformer mounted above._
 > [!warning]
 > Dangerous test. Make sure you fully understand the AC and DC sources, probe references, and synchronization measurements before proceeding. Do not perform this test alone.
 
-![DCAC stage](Images/DCACsupply.png)
-
 **System function view for this test**
 
-![Functions under test](Images/system_test_1.drawio.png)
-_Functions under test: both feeder sides._
+![Functions under test](Images/system_test_7.drawio.png)
+_Functions under test: DC/AC injection in open-loop._
+
+**Board during test**
+
+![transfos](Images/test_7_board_state.drawio.png)
+_Board during the test procedure: transformers will be added_
+
 
 **Sub-tests summary**
 
 | Test | Title | State |
 | --- | --- | --- |
-| 7.1 | Inject 400V DC supply | TO DO |
-| 7.2 | Inject 230V AC supply | TO DO |
+| 7.1 | Assemble missing parts | TO DO |
+| 7.2 | Verify DC/AC conversion with no load | TO DO |
 | 7.3 | Check PLL behavior | TO DO |
-| 7.4 | Verify relay remains open | TO DO |
+| 7.4 | Test the converter with a resistive load | TO DO |
 | 7.5 | Start inverter and monitor thermals | TO DO |
 | 7.6 | Measure generated sinewave | TO DO |
 | 7.7 | Verify grid synchronization | TO DO |
 
 **Sub-tests**
 
-7.1 - Inject `400V` using preferably a lab bench supply with current-limiting capabilities.
+7.1 - Solder the choke inductors to the output filter to connect the high-side H-bridge to the AC output path as shown in the figure above.
 
-![Test 7.1 image anchor](Images/Test_7_1.png)
+> [!Attention] The inductors do not fit the current holes of the board. They need to be filed down until they fit. 
 
-![230V](Images/Inject230.png)
+<!-- This needs a photo! -->
 
-7.2 - Inject `230V` using preferably an isolation transformer.
+7.2 - Connect a high-voltage DC source in the DC-Bus. Upload a code for open-loop single phase converter operation. 
 
-![Test 7.2 image anchor](Images/Test_7_2.png)
+![Test 7.2 system view](Images/system_test_7_1.drawio.png)
 
-7.3 - Check PLL once again with both external supplies present.
+Raise the DC-Bus voltage up to `400V`. Keep the current limit very low. Validate that you have 230VRMS in the output by opening/closing the relay.
 
-![Test 7.3 image anchor](Images/Test_7_3.png)
+![Test 7.2 wiring diagram](Images/test_7_1_wiring_diagram.drawio.png)
 
-7.4 - Make sure the relay stays **OPEN (NOT connected)** before inverter start-up.
 
-![Test 7.4 image anchor](Images/Test_7_4.png)
+7.3 - Verify the PLL algorithm by using the output AC voltage. Vary the voltage amplitude and frequency and verify the PLL follows. Use the output of the code to run this verification or scope mimicry.
 
-7.5 - Start the inverter. **Make sure to look at the layout with a thermal camera**.
+7.4 - Connect a resistive load in the output to validate the system in open-loop. Install a thermal camera to observe the system.
 
-![Test 7.5 image anchor](Images/Test_7_5.png)
+![Test 7.4 system view](Images/system_test_7_4.drawio.png)
 
-7.6 - Measure the generated sinewave.
+Raise the DC-Bus voltage up to `400V`. Keep the resistance high to draw a small current at first. Validate that you have 230VRMS in the output by opening/closing the relay. Lower the resistance to test the block up to nominal power (500W).
 
-![Test 7.6 image anchor](Images/Test_7_6.png)
+![Test 7.4 wiring diagram](Images/test_7_4_wiring_diagram.drawio.png)
 
-7.7 - Check synchronization between the grid side and the inverter output. They should be perfectly in sync. Think twice about how to do the measurement with isolated probes.
+7.5 - Test the grid-forming closed-loop control of the inverter with a resistive load. 
 
-![Test 7.7 image anchor](Images/Test_7_7.png)
+![Test 7.5 system view](Images/system_test_7_4.drawio.png)
 
-![Sync](Images/SYNC.png)
+Use the grid-forming code to validate that the converter creates a 230VRMS output that is independent of the load.
+
+7.6 - Intermediary test to validate that the converter can be used in grid-forming with a transformer to control the output of a resistive load.
+
+![Test 7.6 wiring diagram](Images/test_7_6_wiring_diagram.drawio.png)
+
+Here the inverter is connected to a resistor via a step-down transformer. Validate that the converter can generate a sine wave on the resistor level. 
+
+7.7 - Test the grid-following code to validate the converter can synchroize and inject into an isolated grid. 
+
+
+![Test 7.7 wiring diagram](Images/test_7_7_wiring_diagram.drawio.png)
+
+Use a Twist board as a grid forming to create a sine wave on low-voltage side of the transformer. 
+Validate that the converter can syncronize with this sine-wave.
+Once in sync, connect the relay and inject a small amount of power into the system. 
+
+7.8 - Test that the system can inject into the local grid. Disconnect the inverter's relay and verify that it can sync to the local grid. Once the synchronization in place, connect the relay and inject a small amount of power. Raise the power up to reach nominal 500W.  
+
+
+![Test 7.8 wiring diagram](Images/test_7_8_wiring_diagram.drawio.png)
+
+
+
 
 -----
 <a id="test-8"></a>
