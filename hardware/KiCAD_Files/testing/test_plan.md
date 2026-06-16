@@ -12,24 +12,50 @@ DO NOT PROCEED ALONE WITH THIS TEST PROCEDURE.
 
 **SECURE THE BOARD MECHANICALLY ON AN ISOLATED WORKBENCH BEFORE STARTING**
 
-### Step 0 Check for worst case scenario  
+| Test | Status | Title | Objective |
+| --- | --- | --- | --- |
+| 0   |  TO DO   |  Check for worst-case scenario | Verify there are no critical shorts before powering the board. |
+| 1   |  TO DO   |  Low-side feeder characterization | Validate auxiliary supply rails, loading behavior, and efficiency across input voltage range. |
+| 2   |  TO DO   |  Check measurements at idle state | Confirm sensor offsets and nominal idle readings before active switching. |
+| 3   |  TO DO   |  Assemble SPIN board and test relay | Flash firmware and verify relay open/close behavior. |
+| 4   |  TO DO   |  Check PWM signals at the switch level | Validate switch-level PWM behavior, isolator propagation, and signal polarity. |
+| 5   |  TO DO   |  Check the gain and offsets for the measurements | Verify measurement chain behavior for high-voltage DC and AC sensing. |
+| 6   |  TO DO   |  Assemble the two HF transformers | Prepare the power stage for DC/DC testing and ZVS verification. |
+| 7   |  TO DO   |  DC/AC testing | Validate inverter startup, synchronization, and generated sinewave behavior. |
+| 8   |  TO DO   |  Mount capacitors and common-mode choke | Complete assembly and prepare the prototype for integration testing. |
 
-With a multimeter in omhmeter mode 
+## Description of the tests  
 
+This section describes the test procedures, their required tools and expected deliverables .
+
+### Test 0 - Check for worst case scenario  
+
+This test validates that the board is viable.
+
+**Tool needed:**
+- multimeter with omhmeter or continuity mode 
+
+**Test procedure**
 - Check that 12V to ground and 5V to ground are not shorted. 
+
+![12V spots on the board](Images/As_built.png)
+
 - Check that PV+ and PV- are not shorted
 - Check that L and N are not shorted
 - Check that PE and L and N and PV+ and PV- are not shorted
 
 
-## Step 1 Low side feeder characterization
+## Test 1 Low side feeder characterization
 
-**Make sure you have a thermal camera**
+The objective of this test is to validate there are no hot-spots on the board.
 
-Place a voltage source between PV+ and PV- 
+**Tool needed: **
+- Thermal camera
+- Voltage source with current limiting
 
-**CHECK FOR HOTSPOTS**
 
+**Test procedure**
+- Place a voltage source between PV+ and PV- 
 - Check that 12V_LV supply rail works
 - Check that 5V_DGND supply rail works
 - Check that 12V_HV supply rail works
@@ -62,7 +88,7 @@ Place a voltage source between PV+ and PV-
 **Retrieve datapoints and publish a plot with Efficiency against Vin**
 
 
-## Step 2 check measurements at idle state    
+## Test 2 check measurements at idle state    
 
 - Check that DC voltage input sensor value is 1V for a DC voltage input of 40V. 
 
@@ -77,7 +103,7 @@ Place a voltage source between PV+ and PV-
 - Check that I_Ac sensor value is about 1V (no current on the AC bus at this point so sensor centered at 1V)
 
 
-## Step 3 Assemble SPIN board and test relay
+## Test 3 Assemble SPIN board and test relay
 
 ![Board with SPIN](Images/Spin_ASM.png)
 
@@ -86,9 +112,9 @@ Place a voltage source between PV+ and PV-
 - Verify that the spin board is able to close and open the contact. 
 
 
-## Step 4 check pwm signals at the switch level.
+## Test 4 check pwm signals at the switch level.
 
-**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this step alone**  
+**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
 
 - Use test points provided for low side switch and verify that the switches operates correctly. (Mind the fact that they are not all on the same voltage reference when testing)
 
@@ -99,7 +125,7 @@ Place a voltage source between PV+ and PV-
 - Check that the polarity of the PWM is the same before and after the isolator. (Mind the fact that they are not all on the same voltage reference when testing)
 
 
-### Check the gain and offsets for the measurements  
+### Test 5 Check the gain and offsets for the measurements  
 
 ![transfos](Images/transfos.png)  
 
@@ -112,7 +138,7 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 ![separation DC bus](Images/DCBusSeparation.png)  
 
 
-**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this step alone**  
+**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
 
 - Inject 400V on the capacitor bank on as shown below
 - Make sure the microcontroller reads 400V on the VDc bus sensor
@@ -120,7 +146,7 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 ![400V](Images/Inject400.png)
 
 
-**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this step alone**  
+**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
 
 - Inject 230V 50hz as shown below 
 - Make sure the microcontroller reads 230VRms, and 50hz on the VDc bus sensor.
@@ -130,7 +156,7 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 
 **NOW DISCONNECT THE 230V. WE DO NOT NEED IT TO TEST DC/DC STAGE**
 
-### Step 3 Assemble the two HF transformers  
+### Test 6 Assemble the two HF transformers  
 
 - **DO add a serie wire between primary side and mosfets to place an oscilloscope Current probe**  
 - This is important to test ZVS functionality. 
@@ -138,7 +164,7 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 
 ![transfos](Images/transfos.png)
 
-**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this step alone**  
+**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
 
 
 **Make sure you have a thermal camera when doing first tests**
@@ -160,9 +186,9 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 - When characterization properly done, and data properly saved, remove the wire and install the transformer completely. 
 
 
-## Step 4 DC/AC testing   
+## Test 7 DC/AC testing   
 
-**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this step alone**  
+**The following test is dangerous!! Make sure you do unsertand fully what you are doing. DO not perform this test alone**  
 
 
 ![DCAC stage](Images/DCACsupply.png) 
@@ -181,7 +207,7 @@ This way, the DCDC stage is fully disconnected from the DC/AC stage and you can 
 
 ![Sync](Images/SYNC.png)  
 
-## Step 5 Mount capacitors, and common-mode choke  
+## Test 8 Mount capacitors, and common-mode choke  
 
 ![Final assembly](Images/finalASM.png)  
 
