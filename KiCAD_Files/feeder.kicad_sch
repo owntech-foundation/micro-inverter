@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "2c82b97b-9dc8-4bc4-8668-c5ba2ec9b719")
 	(paper "A3")
 	(title_block
@@ -23,8 +23,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "TP"
 				(at 1.651 5.842 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -33,6 +37,8 @@
 			)
 			(property "Value" "TestPoint_Probe"
 				(at 1.651 4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -41,47 +47,57 @@
 			)
 			(property "Footprint" ""
 				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "test point (alternative probe-style design)"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "test point tp"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Pin* Test*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "TestPoint_Probe_0_1"
@@ -142,8 +158,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
 				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -153,6 +173,8 @@
 			)
 			(property "Value" "C"
 				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -162,47 +184,57 @@
 			)
 			(property "Footprint" ""
 				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_0_1"
@@ -235,7 +267,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -253,7 +285,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -282,8 +314,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
 				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -293,6 +329,8 @@
 			)
 			(property "Value" "C_Small"
 				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -302,47 +340,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_Small_0_1"
@@ -375,7 +423,7 @@
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -393,7 +441,7 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -422,8 +470,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at -1.27 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -433,6 +485,8 @@
 			)
 			(property "Value" "D_Schottky_Small"
 				(at -7.112 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -442,47 +496,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Schottky diode, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "diode Schottky"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "D_Schottky_Small_0_1"
@@ -574,8 +638,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "L"
 				(at -1.27 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -584,6 +652,8 @@
 			)
 			(property "Value" "L"
 				(at 1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -592,47 +662,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Inductor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "inductor choke coil reactor magnetic"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "L_0_1"
@@ -735,8 +815,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -745,6 +829,8 @@
 			)
 			(property "Value" "R"
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -753,47 +839,57 @@
 			)
 			(property "Footprint" ""
 				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_0_1"
@@ -813,7 +909,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -831,7 +927,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -860,8 +956,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -870,6 +970,8 @@
 			)
 			(property "Value" "R_Small"
 				(at 1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -878,47 +980,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_Small_0_1"
@@ -938,7 +1050,7 @@
 				(pin passive line
 					(at 0 2.54 270)
 					(length 0.762)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -956,7 +1068,7 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 0.762)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -978,8 +1090,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at -7.62 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -989,6 +1105,8 @@
 			)
 			(property "Value" "TPS562202"
 				(at -2.54 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -998,48 +1116,58 @@
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
 				(at 1.27 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.ti.com/lit/gpn/tps562202"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "2A Synchronous Step-Down Voltage Regulator 580kHz, adjustable output voltage, 4.5-17V Input Voltage, 0.804V-7V Output Voltage, SOT-563"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "step-down dcdc buck"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "SOT?563*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "TPS562202_0_1"
@@ -1074,17 +1202,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 -2.54 0)
+				(pin output line
+					(at 10.16 2.54 180)
 					(length 2.54)
-					(name "EN"
+					(name "SW"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1110,24 +1238,6 @@
 						)
 					)
 				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at 10.16 0 180)
 					(length 2.54)
@@ -1139,6 +1249,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1171,8 +1299,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1181,6 +1313,8 @@
 			)
 			(property "Value" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1189,29 +1323,35 @@
 			)
 			(property "Footprint" "Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "LMR38020_0_1"
@@ -1229,16 +1369,16 @@
 			)
 			(symbol "LMR38020_1_1"
 				(pin power_in line
-					(at -11.43 5.08 0)
+					(at 0 -11.43 90)
 					(length 2.54)
-					(name "VIN"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1264,6 +1404,24 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -11.43 5.08 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
 					(at -11.43 -6.35 0)
 					(length 2.54)
@@ -1282,17 +1440,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -11.43 90)
+				(pin input line
+					(at 10.16 -6.35 180)
 					(length 2.54)
-					(name "GND"
+					(name "FB"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1300,18 +1458,17 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -11.43 90)
+				(pin input line
+					(at 10.16 -2.54 180)
 					(length 2.54)
-					(hide yes)
-					(name "GND"
+					(name "PG"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1355,35 +1512,18 @@
 						)
 					)
 				)
-				(pin input line
-					(at 10.16 -2.54 180)
+				(pin passive line
+					(at 0 -11.43 90)
 					(length 2.54)
-					(name "PG"
+					(hide yes)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -6.35 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1398,8 +1538,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at -5.334 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1408,6 +1552,8 @@
 			)
 			(property "Value" "TL431"
 				(at -4.572 -4.826 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1416,49 +1562,59 @@
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at -1.016 -5.588 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 1.778 -9.144 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Shunt Regulator, SOT-23"
 				(at 0.254 -3.302 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "diode device shunt regulator"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "TL431_0_1"
@@ -1611,8 +1767,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "TR701"
 				(at 10.16 28.194 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1621,6 +1781,8 @@
 			)
 			(property "Value" "VPT87DDF01B"
 				(at 9.906 25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1629,47 +1791,57 @@
 			)
 			(property "Footprint" "Footprints:VPT87BB-01B"
 				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "LCSC" "C2846916"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Rotation Offset" "270"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Transformer_2P_2S_0_1"
@@ -2146,24 +2318,6 @@
 					)
 				)
 				(pin passive line
-					(at 0 11.43 0)
-					(length 7.62)
-					(name "AB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 10.16 0)
 					(length 7.62)
 					(name "AA"
@@ -2174,6 +2328,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 11.43 0)
+					(length 7.62)
+					(name "AB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2200,25 +2372,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 21.59 180)
-					(length 7.62)
-					(name "SB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 11.43 180)
+					(at 20.32 0 180)
 					(length 7.62)
 					(name "SA"
 						(effects
@@ -2227,7 +2381,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2254,7 +2408,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 0 180)
+					(at 20.32 11.43 180)
 					(length 7.62)
 					(name "SA"
 						(effects
@@ -2263,7 +2417,25 @@
 							)
 						)
 					)
-					(number "5"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 21.59 180)
+					(length 7.62)
+					(name "SB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2278,8 +2450,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U704"
 				(at 2.54 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2289,6 +2465,8 @@
 			)
 			(property "Value" "VPS8701B"
 				(at 2.54 -12.446 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2298,47 +2476,57 @@
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "VPS8701B"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "LCSC" "C5189123"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Rotation Offset" "90"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "VPS8504B_1_1"
@@ -2373,6 +2561,24 @@
 					)
 				)
 				(pin input line
+					(at 0 -8.89 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
 					(at -7.62 -1.27 0)
 					(length 2.54)
 					(name "CLK"
@@ -2383,6 +2589,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "VD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2409,24 +2633,6 @@
 					)
 				)
 				(pin input line
-					(at 0 -8.89 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at 7.62 2.54 180)
 					(length 2.54)
 					(name "VD1"
@@ -2437,24 +2643,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "VD2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2473,8 +2661,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "TR701"
 				(at 10.16 28.194 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2483,6 +2675,8 @@
 			)
 			(property "Value" "VPT87DDF01B"
 				(at 9.906 25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2491,47 +2685,57 @@
 			)
 			(property "Footprint" "Footprints:VPT87BB-01B"
 				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "LCSC" "C2846916"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Rotation Offset" "270"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Transformer_2P_2S_1_0_1"
@@ -3008,24 +3212,6 @@
 					)
 				)
 				(pin passive line
-					(at 0 11.43 0)
-					(length 7.62)
-					(name "AB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 10.16 0)
 					(length 7.62)
 					(name "AA"
@@ -3036,6 +3222,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 11.43 0)
+					(length 7.62)
+					(name "AB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3062,25 +3266,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 21.59 180)
-					(length 7.62)
-					(name "SB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 11.43 180)
+					(at 20.32 0 180)
 					(length 7.62)
 					(name "SA"
 						(effects
@@ -3089,7 +3275,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3116,7 +3302,7 @@
 					)
 				)
 				(pin passive line
-					(at 20.32 0 180)
+					(at 20.32 11.43 180)
 					(length 7.62)
 					(name "SA"
 						(effects
@@ -3125,7 +3311,25 @@
 							)
 						)
 					)
-					(number "5"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 21.59 180)
+					(length 7.62)
+					(name "SB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3140,8 +3344,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U704"
 				(at 2.54 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3151,6 +3359,8 @@
 			)
 			(property "Value" "VPS8701B"
 				(at 2.54 -12.446 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3160,47 +3370,57 @@
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "VPS8701B"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "LCSC" "C5189123"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Rotation Offset" "90"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "VPS8504B_1_1_1"
@@ -3235,6 +3455,24 @@
 					)
 				)
 				(pin input line
+					(at 0 -8.89 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
 					(at -7.62 -1.27 0)
 					(length 2.54)
 					(name "CLK"
@@ -3245,6 +3483,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "VD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3271,24 +3527,6 @@
 					)
 				)
 				(pin input line
-					(at 0 -8.89 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at 7.62 2.54 180)
 					(length 2.54)
 					(name "VD1"
@@ -3306,29 +3544,11 @@
 						)
 					)
 				)
-				(pin input line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "VD2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3339,17 +3559,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+12V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3358,38 +3584,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+12V\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+12V_0_1"
@@ -3434,7 +3668,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3453,7 +3687,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3464,17 +3698,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3483,38 +3723,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -3535,7 +3783,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3554,7 +3802,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:GND1"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -3565,17 +3813,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND1"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3584,38 +3838,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND1_0_1"
@@ -3636,7 +3898,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6552,6 +6814,10 @@
 		(uuid "f5320d33-7265-403e-a7c7-288086586760")
 	)
 	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(polyline
 			(pts
 				(xy 13.97 176.53) (xy 152.4 176.53) (xy 152.4 78.74) (xy 265.43 78.74) (xy 265.43 13.97) (xy 13.97 13.97)
@@ -6564,10 +6830,14 @@
 			(fill
 				(type none)
 			)
-			(uuid 594b89b0-4d5b-4040-ac40-2aa6b6637093)
+			(uuid "594b89b0-4d5b-4040-ac40-2aa6b6637093")
 		)
 	)
 	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(polyline
 			(pts
 				(xy 153.67 80.01) (xy 153.67 121.92) (xy 281.94 121.92) (xy 281.94 80.01)
@@ -6580,10 +6850,14 @@
 			(fill
 				(type none)
 			)
-			(uuid d65b2539-1c39-4b75-aea5-6c62166c4c0f)
+			(uuid "d65b2539-1c39-4b75-aea5-6c62166c4c0f")
 		)
 	)
 	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(polyline
 			(pts
 				(xy 281.94 176.53) (xy 281.94 123.19) (xy 153.67 123.19) (xy 153.67 176.53)
@@ -6596,7 +6870,7 @@
 			(fill
 				(type none)
 			)
-			(uuid f2b10898-c163-4f7f-8a8e-1715448a48b2)
+			(uuid "f2b10898-c163-4f7f-8a8e-1715448a48b2")
 		)
 	)
 	(netclass_flag ""
@@ -6613,6 +6887,8 @@
 		(uuid "5e686da3-d49c-4ff2-b160-7ecdb5524fc8")
 		(property "Netclass" "N"
 			(at 167.0685 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6622,6 +6898,8 @@
 		)
 		(property "Component Class" ""
 			(at -125.73 -20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6644,6 +6922,8 @@
 		(uuid "b8e6dd06-5729-498e-89de-11ced7c90cb5")
 		(property "Netclass" "GND_HV"
 			(at 172.1485 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6653,6 +6933,8 @@
 		)
 		(property "Component Class" ""
 			(at -120.65 -74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6675,6 +6957,8 @@
 		(uuid "bbc71f76-0655-420d-bfb8-a21c56dbc78d")
 		(property "Netclass" "DGND"
 			(at 34.9885 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6684,6 +6968,8 @@
 		)
 		(property "Component Class" ""
 			(at -335.28 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6696,23 +6982,29 @@
 		(lib_id "power:+12V")
 		(at 80.01 130.81 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03945a7e-b064-492e-9c00-b5ad6c854b98")
 		(property "Reference" "#PWR0707"
 			(at 80.01 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+12V_{LV}"
 			(at 80.01 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6721,36 +7013,42 @@
 		)
 		(property "Footprint" ""
 			(at 80.01 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 80.01 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
 			(at 80.01 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "fd39bb54-1d33-4a5d-b6f9-d0f6d40804a7")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR0707")
 					(unit 1)
@@ -6763,13 +7061,17 @@
 		(at 107.95 147.32 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "09482c51-f07f-409a-bc89-ec5e3f336585")
 		(property "Reference" "C714"
 			(at 104.14 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6779,6 +7081,8 @@
 		)
 		(property "Value" "100nF"
 			(at 104.14 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6788,38 +7092,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 106.9848 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 107.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 107.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C14663"
 			(at 107.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -6829,7 +7141,7 @@
 			(uuid "16668135-a056-4f66-8f4a-77b0ddcd19ac")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C714")
 					(unit 1)
@@ -6841,13 +7153,17 @@
 		(lib_id "Device:D_Schottky_Small")
 		(at 170.18 113.03 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "1472cb9a-b278-4478-a26f-e379adcf402d")
 		(property "Reference" "D702"
 			(at 174.498 106.934 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6857,6 +7173,8 @@
 		)
 		(property "Value" "PMEG3010"
 			(at 174.498 109.474 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6866,38 +7184,46 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323F"
 			(at 170.18 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 170.18 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Schottky diode, small symbol"
 			(at 170.18 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2937140"
 			(at 170.18 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -6907,7 +7233,7 @@
 			(uuid "8d4cbdff-315b-4ddb-bd63-3f03b37dbb9a")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "D702")
 					(unit 1)
@@ -6920,13 +7246,17 @@
 		(at 215.9 154.94 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "18758b29-d7e8-4858-b09d-77b7c0e02231")
 		(property "Reference" "R711"
 			(at 213.36 153.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6936,6 +7266,8 @@
 		)
 		(property "Value" "10k"
 			(at 213.36 156.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6945,38 +7277,46 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 217.678 154.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 215.9 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 215.9 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C17414"
 			(at 215.9 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6986,7 +7326,7 @@
 			(uuid "c7cef74d-b214-43ad-967a-44ca37e013e8")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "R711")
 					(unit 1)
@@ -6998,22 +7338,28 @@
 		(lib_id "power:+12V")
 		(at 198.12 88.9 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "26e59743-7b98-483e-8cab-89fc242197e8")
 		(property "Reference" "#PWR0715"
 			(at 198.12 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+12V_{HV}"
 			(at 198.12 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7022,36 +7368,42 @@
 		)
 		(property "Footprint" ""
 			(at 198.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 198.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
 			(at 198.12 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "205e9414-fa9e-4c2d-94ff-09ef40128407")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR0715")
 					(unit 1)
@@ -7063,13 +7415,17 @@
 		(lib_id "Device:D_Schottky_Small")
 		(at 170.18 161.29 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b9900c4-3f66-4de9-a153-9226b32ef07d")
 		(property "Reference" "D704"
 			(at 174.498 155.194 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7079,6 +7435,8 @@
 		)
 		(property "Value" "PMEG3010"
 			(at 174.498 157.734 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7088,38 +7446,46 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323F"
 			(at 170.18 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 170.18 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Schottky diode, small symbol"
 			(at 170.18 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2937140"
 			(at 170.18 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7129,7 +7495,7 @@
 			(uuid "65c960df-1f8f-4223-a8f7-7cad7dc06a00")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "D704")
 					(unit 1)
@@ -7142,13 +7508,17 @@
 		(at 93.98 147.32 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2bae637e-03bb-42ee-913c-edf1be05f6d4")
 		(property "Reference" "C712"
 			(at 90.17 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7158,6 +7528,8 @@
 		)
 		(property "Value" "10uF"
 			(at 90.17 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7167,38 +7539,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 93.0148 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 93.98 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 93.98 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C440198"
 			(at 93.98 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7208,7 +7588,7 @@
 			(uuid "88752819-5cc2-4535-8aac-9ce3c068cd10")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C712")
 					(unit 1)
@@ -7221,13 +7601,17 @@
 		(at 152.4 44.45 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f846022-b275-49dc-beef-6855923155bd")
 		(property "Reference" "C704"
 			(at 148.59 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7237,6 +7621,8 @@
 		)
 		(property "Value" "22uF"
 			(at 148.59 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7246,38 +7632,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 151.4348 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 152.4 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 152.4 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C309062"
 			(at 152.4 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7287,7 +7681,7 @@
 			(uuid "b47f61b1-5182-4934-a88d-44a27daea27f")
 		)
 		(instances
-			(project ""
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C704")
 					(unit 1)
@@ -7299,14 +7693,18 @@
 		(lib_id "Connector:TestPoint_Probe")
 		(at 241.3 139.7 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3255ba82-232f-4160-9857-b06adb2a3b98")
 		(property "Reference" "TP704"
 			(at 245.11 136.8424 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7316,6 +7714,8 @@
 		)
 		(property "Value" "TestPoint_Probe"
 			(at 245.11 139.3824 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7325,36 +7725,42 @@
 		)
 		(property "Footprint" "Footprints:TestPoint_Pad_D1.0mm"
 			(at 246.38 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 246.38 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
 			(at 241.3 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "75ded1ca-f473-42aa-884d-c0575dfcd6df")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "TP704")
 					(unit 1)
@@ -7367,13 +7773,17 @@
 		(at 93.98 99.06 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "395d9791-0ccf-4833-8628-fb7c3deeb4e3")
 		(property "Reference" "C711"
 			(at 90.17 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7383,6 +7793,8 @@
 		)
 		(property "Value" "10uF"
 			(at 90.17 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7392,38 +7804,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 93.0148 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 93.98 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 93.98 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C440198"
 			(at 93.98 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7433,7 +7853,7 @@
 			(uuid "55bbdda7-88d1-4fc5-b22a-1acc8dcdfd38")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C711")
 					(unit 1)
@@ -7445,23 +7865,29 @@
 		(lib_id "power:GND1")
 		(at 114.3 167.64 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a76b95f-8cb2-450d-b0f5-1e03ce433954")
 		(property "Reference" "#PWR0709"
 			(at 114.3 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND_{LV}"
 			(at 114.3 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7470,36 +7896,42 @@
 		)
 		(property "Footprint" ""
 			(at 114.3 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 114.3 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
 			(at 114.3 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "6596d511-688f-4b6d-a9f0-568655de46f6")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR0709")
 					(unit 1)
@@ -7511,23 +7943,29 @@
 		(lib_id "power:+12V")
 		(at 222.25 34.29 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3af46b67-2f13-4cfc-8c56-e4a296c72f26")
 		(property "Reference" "#PWR038"
 			(at 224.028 34.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5V_{DGND}"
 			(at 222.25 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7536,29 +7974,35 @@
 		)
 		(property "Footprint" ""
 			(at 222.25 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 222.25 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
 			(at 222.25 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7571,7 +8015,7 @@
 					(unit 1)
 				)
 			)
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR038")
 					(unit 1)
@@ -7583,14 +8027,18 @@
 		(lib_id "Device:L")
 		(at 115.57 36.83 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4106a9bc-bd8f-4721-aadc-7d0cb7754cbc")
 		(property "Reference" "L701"
 			(at 115.57 31.75 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7599,6 +8047,8 @@
 		)
 		(property "Value" "68uH - 70mR"
 			(at 115.57 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7607,38 +8057,46 @@
 		)
 		(property "Footprint" "Inductor_SMD:L_12x12mm_H6mm"
 			(at 115.57 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 115.57 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Inductor"
 			(at 115.57 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C7587712"
 			(at 115.57 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7648,7 +8106,7 @@
 			(uuid "df8f2905-9496-4c7d-bddd-8514a16692a6")
 		)
 		(instances
-			(project ""
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "L701")
 					(unit 1)
@@ -7660,13 +8118,17 @@
 		(lib_id "Device:C")
 		(at 40.64 43.18 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "4543df22-cda9-4cf3-9ce1-b10afe7a1d30")
 		(property "Reference" "C718"
 			(at 44.196 42.1639 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
@@ -7677,6 +8139,8 @@
 		)
 		(property "Value" "4.7uF"
 			(at 44.196 44.704 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
@@ -7687,59 +8151,71 @@
 		)
 		(property "Footprint" "Footprints:C_1210_3225Metric"
 			(at 41.6052 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}\\datasheet\\MLCC-1837944.pdf"
 			(at 40.64 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 40.64 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Position Offset" ""
 			(at 40.64 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rotation Offset" ""
 			(at 40.64 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C381466"
 			(at 40.64 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7755,7 +8231,7 @@
 					(unit 1)
 				)
 			)
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C718")
 					(unit 1)
@@ -7767,23 +8243,29 @@
 		(lib_id "power:+12V")
 		(at 220.98 135.89 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46a3c0a3-e774-4cbc-9ce5-551f5c409c33")
 		(property "Reference" "#PWR0710"
 			(at 222.758 135.89 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5V_{ACsense}"
 			(at 220.98 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7792,36 +8274,42 @@
 		)
 		(property "Footprint" ""
 			(at 220.98 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 220.98 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
 			(at 220.98 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "82b07f65-d37f-4eca-8f40-8ffbeee2bb99")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR0710")
 					(unit 1)
@@ -7833,14 +8321,18 @@
 		(lib_id "Symbols:LMR38020")
 		(at 82.55 38.1 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cff9cc7-3fb1-4e8c-ae07-c77e8753e868")
 		(property "Reference" "U707"
 			(at 81.915 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7849,6 +8341,8 @@
 		)
 		(property "Value" "LMR38020SDDAR"
 			(at 81.915 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7857,47 +8351,57 @@
 		)
 		(property "Footprint" "Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias"
 			(at 82.55 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}\\datasheets\\lmr38020.pdf"
 			(at 82.55 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 82.55 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C3192337"
 			(at 82.55 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rotation Offset" "270"
 			(at 82.55 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7928,7 +8432,7 @@
 			(uuid "b260c0da-2f8c-4219-be06-2b77d88fd398")
 		)
 		(instances
-			(project ""
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "U707")
 					(unit 1)
@@ -7940,13 +8444,17 @@
 		(lib_id "Device:C")
 		(at 226.06 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "4d6a38d4-ca2e-4380-a16e-21fdeaff3d34")
 		(property "Reference" "C708"
 			(at 229.87 44.4499 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7956,6 +8464,8 @@
 		)
 		(property "Value" "47uF"
 			(at 229.87 46.9899 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7965,38 +8475,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 227.0252 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 226.06 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 226.06 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C96123"
 			(at 226.06 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8006,7 +8524,7 @@
 			(uuid "786570f7-f616-4b38-96fc-f5296dbfee70")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C708")
 					(unit 1)
@@ -8019,13 +8537,17 @@
 		(at 80.01 147.32 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "516eaf93-c864-42ba-a7cf-83b0e29b114c")
 		(property "Reference" "C710"
 			(at 76.2 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8035,6 +8557,8 @@
 		)
 		(property "Value" "10uF"
 			(at 76.2 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8044,38 +8568,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 79.0448 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 80.01 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 80.01 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C440198"
 			(at 80.01 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8085,7 +8617,7 @@
 			(uuid "24dbd3a2-4276-44cf-a7d2-f1f0a2536eb1")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C710")
 					(unit 1)
@@ -8097,14 +8629,18 @@
 		(lib_id "Device:C_Small")
 		(at 100.33 30.48 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5248dedd-fab7-4768-9b3e-eea0704d53e2")
 		(property "Reference" "C703"
 			(at 102.87 29.2162 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8114,6 +8650,8 @@
 		)
 		(property "Value" "100nF"
 			(at 102.87 31.7562 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8123,38 +8661,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 100.33 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 100.33 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 100.33 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C49678"
 			(at 100.33 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8164,7 +8710,7 @@
 			(uuid "53532702-2026-4a24-9990-eadc8242898e")
 		)
 		(instances
-			(project ""
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C703")
 					(unit 1)
@@ -8177,13 +8723,17 @@
 		(at 132.08 40.64 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "606f9643-de71-459f-b213-8d24a7069c1f")
 		(property "Reference" "C705"
 			(at 129.54 39.3762 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8193,6 +8743,8 @@
 		)
 		(property "Value" "20pF"
 			(at 129.54 41.9162 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8202,38 +8754,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 132.08 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 132.08 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 132.08 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C1798"
 			(at 132.08 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8243,7 +8803,7 @@
 			(uuid "087178c0-1dab-4086-8968-79325244a253")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C705")
 					(unit 1)
@@ -8256,13 +8816,17 @@
 		(at 193.04 96.52 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "669850cf-cb66-41b8-884d-aff4b0256ece")
 		(property "Reference" "C715"
 			(at 189.23 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8272,6 +8836,8 @@
 		)
 		(property "Value" "10uF"
 			(at 189.23 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8281,38 +8847,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 192.0748 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 193.04 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 193.04 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C440198"
 			(at 193.04 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8322,7 +8896,7 @@
 			(uuid "c2a443a3-6002-4bb0-a5ab-0332e5f5fa85")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C715")
 					(unit 1)
@@ -8334,14 +8908,18 @@
 		(lib_id "Connector:TestPoint_Probe")
 		(at 205.74 91.44 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "693a574b-8f2a-4fe8-9008-2977db92f267")
 		(property "Reference" "TP703"
 			(at 209.55 88.5824 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8351,6 +8929,8 @@
 		)
 		(property "Value" "TestPoint_Probe"
 			(at 209.55 91.1224 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8360,36 +8940,42 @@
 		)
 		(property "Footprint" "Footprints:TestPoint_Pad_D1.0mm"
 			(at 210.82 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 210.82 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
 			(at 205.74 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "b656a69a-3b5b-4086-a8bf-64b633c7c391")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "TP703")
 					(unit 1)
@@ -8402,13 +8988,17 @@
 		(lib_id "Symbols:Transformer_2P_2S")
 		(at 142.24 113.03 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "70058771-8c8f-49a1-9d70-2d392db6037d")
 		(property "Reference" "TR701"
 			(at 141.224 84.074 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8417,6 +9007,8 @@
 		)
 		(property "Value" "VPT87DDF01B"
 			(at 144.526 86.868 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8425,47 +9017,57 @@
 		)
 		(property "Footprint" "Footprints:VPT87BB-01B"
 			(at 142.24 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 142.24 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 142.24 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2846916"
 			(at 142.24 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rotation Offset" "270"
 			(at 142.24 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8493,7 +9095,7 @@
 			(uuid "b0a549f7-b075-46c4-bedd-e9f810c817b7")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "TR701")
 					(unit 1)
@@ -8505,13 +9107,17 @@
 		(lib_id "Device:L")
 		(at 209.55 36.83 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "70b38e61-deab-4c74-b99a-4736bbde9192")
 		(property "Reference" "L702"
 			(at 209.55 31.75 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8520,6 +9126,8 @@
 		)
 		(property "Value" "4.7uH - 80mR"
 			(at 209.804 34.036 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8528,38 +9136,46 @@
 		)
 		(property "Footprint" "Inductor_SMD:L_Cenker_CKCS4020"
 			(at 209.55 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 209.55 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Inductor"
 			(at 209.55 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C3002596"
 			(at 209.55 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8569,7 +9185,7 @@
 			(uuid "0d3cefd2-d886-4841-98cc-c3cebed2f548")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "L702")
 					(unit 1)
@@ -8582,13 +9198,17 @@
 		(at 215.9 144.78 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7a79dc51-1e31-4de1-ab87-e59c9e090973")
 		(property "Reference" "R710"
 			(at 213.36 143.5099 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8598,6 +9218,8 @@
 		)
 		(property "Value" "10k"
 			(at 213.36 146.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8607,38 +9229,46 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 217.678 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 215.9 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 215.9 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C17414"
 			(at 215.9 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8648,7 +9278,7 @@
 			(uuid "020332e8-882d-4acb-be2d-780fe9185a1f")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "R710")
 					(unit 1)
@@ -8661,13 +9291,17 @@
 		(at 237.49 149.86 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7b6b66d4-283f-44e4-b991-87e94a7f830c")
 		(property "Reference" "C719"
 			(at 244.602 148.844 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8677,6 +9311,8 @@
 		)
 		(property "Value" "100nF"
 			(at 245.364 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8686,38 +9322,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 237.49 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}\\datasheet\\KEM_C1002_X7R_SMD-3316098.pdf"
 			(at 237.49 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 237.49 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C49678"
 			(at 237.49 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8727,7 +9371,7 @@
 			(uuid "4f42c8ec-7c7d-4a21-914f-f2fb2f93de19")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C719")
 					(unit 1)
@@ -8740,13 +9384,17 @@
 		(at 193.04 144.78 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7ec78e86-bc04-496b-972b-cdf91412423a")
 		(property "Reference" "C716"
 			(at 189.23 143.51 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8756,6 +9404,8 @@
 		)
 		(property "Value" "10uF"
 			(at 189.23 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8765,38 +9415,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 192.0748 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 193.04 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 193.04 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C440198"
 			(at 193.04 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8806,7 +9464,7 @@
 			(uuid "7ee2945a-a85d-4cb9-ac55-46879db977d6")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C716")
 					(unit 1)
@@ -8818,14 +9476,18 @@
 		(lib_id "Connector:TestPoint_Probe")
 		(at 228.6 36.83 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "865b0e50-7ca9-449b-b770-667c3b1a187e")
 		(property "Reference" "TP701"
 			(at 232.41 33.9724 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8835,6 +9497,8 @@
 		)
 		(property "Value" "TestPoint_Probe"
 			(at 232.41 36.5124 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8844,36 +9508,42 @@
 		)
 		(property "Footprint" "Footprints:TestPoint_Pad_D1.0mm"
 			(at 233.68 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 233.68 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
 			(at 228.6 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "ff423d16-d525-4fea-98b1-29f387bc13f3")
 		)
 		(instances
-			(project ""
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "TP701")
 					(unit 1)
@@ -8885,13 +9555,17 @@
 		(lib_id "Symbols:Transformer_2P_2S")
 		(at 142.24 161.29 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "89c03811-2438-41c5-a02e-19134aae08d7")
 		(property "Reference" "TR702"
 			(at 141.732 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8900,6 +9574,8 @@
 		)
 		(property "Value" "VPT87DFB01B"
 			(at 145.034 134.874 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8908,47 +9584,57 @@
 		)
 		(property "Footprint" "Footprints:VPT87BB-01B"
 			(at 142.24 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 142.24 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 142.24 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2846915"
 			(at 142.24 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rotation Offset" "270"
 			(at 142.24 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8976,7 +9662,7 @@
 			(uuid "e21899c4-1f19-45e5-aebd-4b77c137c03d")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "TR702")
 					(unit 1)
@@ -8988,14 +9674,18 @@
 		(lib_id "Device:L")
 		(at 87.63 134.62 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bc00a2b-8382-4ad9-9bb0-3b204d080d67")
 		(property "Reference" "L704"
 			(at 87.63 129.54 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9004,6 +9694,8 @@
 		)
 		(property "Value" "10uH"
 			(at 87.63 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9012,38 +9704,46 @@
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 87.63 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 87.63 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Inductor"
 			(at 87.63 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C88173"
 			(at 87.63 134.62 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9053,7 +9753,7 @@
 			(uuid "dc2e5e62-4d5a-498d-98bf-22c74093c2df")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "L704")
 					(unit 1)
@@ -9066,13 +9766,17 @@
 		(lib_id "Symbols:VPS8504B")
 		(at 124.46 97.79 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bc1803f-61d3-4e6d-9eb5-10f58378a97e")
 		(property "Reference" "U703"
 			(at 127 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9082,6 +9786,8 @@
 		)
 		(property "Value" "VPS8701B"
 			(at 127 110.236 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9091,47 +9797,57 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
 			(at 124.46 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 124.46 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "VPS8701B"
 			(at 124.46 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C5189123"
 			(at 124.46 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rotation Offset" "90"
 			(at 124.46 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "6"
@@ -9153,7 +9869,7 @@
 			(uuid "efd2c7aa-8696-40d0-9843-198a1fd9e005")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "U703")
 					(unit 1)
@@ -9165,23 +9881,29 @@
 		(lib_id "power:GND1")
 		(at 114.3 116.84 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d3253c6-2eda-48c8-be87-a0aecacbf400")
 		(property "Reference" "#PWR0705"
 			(at 114.3 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND_{LV}"
 			(at 114.3 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9190,36 +9912,42 @@
 		)
 		(property "Footprint" ""
 			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
 			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "309bd69e-01b5-429c-b802-6ceea3ff922f")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR0705")
 					(unit 1)
@@ -9232,13 +9960,17 @@
 		(at 215.9 49.53 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "918641c8-d25b-4d33-9616-81ad370de432")
 		(property "Reference" "R706"
 			(at 218.44 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -9248,6 +9980,8 @@
 		)
 		(property "Value" "10k"
 			(at 218.44 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9257,38 +9991,46 @@
 		)
 		(property "Footprint" "Footprints:R_0805_2012Metric"
 			(at 215.9 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 215.9 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 215.9 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C17414"
 			(at 215.9 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9298,7 +10040,7 @@
 			(uuid "64984bd9-f01b-4dda-82ba-3a1c53e2f824")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "R706")
 					(unit 1)
@@ -9310,23 +10052,29 @@
 		(lib_id "power:GND1")
 		(at 20.32 55.88 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "961f8858-a51a-4c9c-b8d1-29a36fe7dbaa")
 		(property "Reference" "#PWR045"
 			(at 20.32 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND_{LV}"
 			(at 20.32 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9335,29 +10083,35 @@
 		)
 		(property "Footprint" ""
 			(at 20.32 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 20.32 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
 			(at 20.32 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9370,7 +10124,7 @@
 					(unit 1)
 				)
 			)
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR045")
 					(unit 1)
@@ -9382,13 +10136,17 @@
 		(lib_id "Device:D_Schottky_Small")
 		(at 170.18 139.7 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "98469250-48f0-408e-ab91-55054f3d52cc")
 		(property "Reference" "D703"
 			(at 164.846 133.096 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9398,6 +10156,8 @@
 		)
 		(property "Value" "PMEG3010"
 			(at 164.592 135.382 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9407,38 +10167,46 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323F"
 			(at 170.18 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 170.18 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Schottky diode, small symbol"
 			(at 170.18 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2937140"
 			(at 170.18 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9448,7 +10216,7 @@
 			(uuid "54f84187-4c1c-4b25-badc-3ae563a8aee4")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "D703")
 					(unit 1)
@@ -9460,13 +10228,17 @@
 		(lib_id "Device:D_Schottky_Small")
 		(at 170.18 91.44 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "9ad26a94-0515-4864-a836-0b07ed3d58cc")
 		(property "Reference" "D701"
 			(at 164.846 84.836 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9476,6 +10248,8 @@
 		)
 		(property "Value" "PMEG3010"
 			(at 164.592 87.122 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9485,38 +10259,46 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323F"
 			(at 170.18 91.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 170.18 91.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Schottky diode, small symbol"
 			(at 170.18 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2937140"
 			(at 170.18 91.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9526,7 +10308,7 @@
 			(uuid "47164108-25fb-4706-b344-c202e58bd1b1")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "D701")
 					(unit 1)
@@ -9538,23 +10320,29 @@
 		(lib_id "power:GND1")
 		(at 201.93 105.41 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c4d1952-5c18-4562-9656-cae5d6110a8b")
 		(property "Reference" "#PWR0706"
 			(at 201.93 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND_{HV}"
 			(at 201.93 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9563,36 +10351,42 @@
 		)
 		(property "Footprint" ""
 			(at 201.93 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 201.93 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
 			(at 201.93 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "46552c09-9f30-4baf-8afa-6df59f4aa38b")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR0706")
 					(unit 1)
@@ -9604,13 +10398,17 @@
 		(lib_id "Device:L")
 		(at 33.02 33.02 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "9ddf2f31-c80b-4406-95a7-525f60c81c9f")
 		(property "Reference" "L705"
 			(at 33.02 30.48 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
@@ -9620,6 +10418,8 @@
 		)
 		(property "Value" "10uH"
 			(at 33.02 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
@@ -9629,69 +10429,83 @@
 		)
 		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
 			(at 33.02 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}\\datasheet\\wound02_e-2487803.pdf"
 			(at 33.02 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 33.02 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Functional Block" "Feeder"
 			(at 33.02 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Position Offset" ""
 			(at 33.02 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rotation Offset" ""
 			(at 33.02 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2047632"
 			(at 33.02 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9707,7 +10521,7 @@
 					(unit 1)
 				)
 			)
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "L705")
 					(unit 1)
@@ -9719,23 +10533,29 @@
 		(lib_id "power:GND")
 		(at 77.47 55.88 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0601eda-a67f-4c3c-acf0-29eff8cfb23d")
 		(property "Reference" "#PWR0701"
 			(at 77.47 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND_{LV}"
 			(at 77.47 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9744,36 +10564,42 @@
 		)
 		(property "Footprint" ""
 			(at 77.47 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 77.47 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 77.47 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "2497ee02-daf5-4c34-b447-b59b1a083da8")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR0701")
 					(unit 1)
@@ -9785,14 +10611,18 @@
 		(lib_id "Device:L")
 		(at 87.63 86.36 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2e473f8-571c-452d-9227-45a007cf64c5")
 		(property "Reference" "L703"
 			(at 87.63 81.28 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9801,6 +10631,8 @@
 		)
 		(property "Value" "10uH"
 			(at 87.63 83.82 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9809,38 +10641,46 @@
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 87.63 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 87.63 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Inductor"
 			(at 87.63 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C88173"
 			(at 87.63 86.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9850,7 +10690,7 @@
 			(uuid "ccf9e9fe-bcd6-4897-9013-29f131890ca0")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "L703")
 					(unit 1)
@@ -9862,14 +10702,18 @@
 		(lib_id "Connector:TestPoint_Probe")
 		(at 241.3 161.29 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2fc700e-4dd5-4bd5-a9d0-9a4f05ab045c")
 		(property "Reference" "TP705"
 			(at 245.11 158.4324 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9879,6 +10723,8 @@
 		)
 		(property "Value" "TestPoint_Probe"
 			(at 245.11 160.9724 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9888,36 +10734,42 @@
 		)
 		(property "Footprint" "Footprints:TestPoint_Pad_D1.0mm"
 			(at 246.38 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 246.38 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
 			(at 241.3 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "391460c3-d79a-4b4f-b46b-35ce3e230f6a")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "TP705")
 					(unit 1)
@@ -9929,13 +10781,17 @@
 		(lib_id "Symbols:VPS8504B")
 		(at 124.46 146.05 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "bc184d9e-2f53-4b23-800d-4dfaae67ff03")
 		(property "Reference" "U704"
 			(at 127 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9945,6 +10801,8 @@
 		)
 		(property "Value" "VPS8701B"
 			(at 127 158.496 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9954,47 +10812,57 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
 			(at 124.46 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 124.46 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "VPS8701B"
 			(at 124.46 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C5189123"
 			(at 124.46 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rotation Offset" "90"
 			(at 124.46 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "6"
@@ -10016,7 +10884,7 @@
 			(uuid "9f735b28-9322-4efa-9cce-061956e821a1")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "U704")
 					(unit 1)
@@ -10029,13 +10897,17 @@
 		(at 100.33 40.64 90)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf3b6c39-be35-4a04-b454-14daaa4d50ab")
 		(property "Reference" "R704"
 			(at 98.298 38.862 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -10045,6 +10917,8 @@
 		)
 		(property "Value" "110k"
 			(at 102.362 38.862 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10054,38 +10928,46 @@
 		)
 		(property "Footprint" "Footprints:R_0805_2012Metric"
 			(at 100.33 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 100.33 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 100.33 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C17422"
 			(at 100.33 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10095,7 +10977,7 @@
 			(uuid "ea119096-c787-496d-ace7-d1ad80b881cb")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "R704")
 					(unit 1)
@@ -10107,14 +10989,18 @@
 		(lib_id "Device:R")
 		(at 201.93 96.52 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c000973a-83bf-401a-a2f5-add0f8cd59e3")
 		(property "Reference" "R707"
 			(at 204.47 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10124,6 +11010,8 @@
 		)
 		(property "Value" "4.7k"
 			(at 204.47 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10133,38 +11021,46 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 200.152 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 201.93 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 201.93 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C23162"
 			(at 201.93 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10174,7 +11070,7 @@
 			(uuid "72a80be1-e23d-400c-83c3-ffa949ea2879")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "R707")
 					(unit 1)
@@ -10186,23 +11082,29 @@
 		(lib_id "power:+12V")
 		(at 139.7 34.29 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0548f64-e186-4643-9be8-609d34bc6b3f")
 		(property "Reference" "#PWR044"
 			(at 139.7 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+12V_{LV}"
 			(at 139.7 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10211,29 +11113,35 @@
 		)
 		(property "Footprint" ""
 			(at 139.7 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 139.7 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
 			(at 139.7 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10246,7 +11154,7 @@
 					(unit 1)
 				)
 			)
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR044")
 					(unit 1)
@@ -10259,13 +11167,17 @@
 		(at 137.16 48.26 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "c3e70d97-72bc-4145-851c-eb1d60e8a5c9")
 		(property "Reference" "R702"
 			(at 139.7 46.9899 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -10275,6 +11187,8 @@
 		)
 		(property "Value" "10k"
 			(at 139.7 49.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10284,38 +11198,46 @@
 		)
 		(property "Footprint" "Footprints:R_0805_2012Metric"
 			(at 137.16 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 137.16 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 137.16 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C17414"
 			(at 137.16 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10325,7 +11247,7 @@
 			(uuid "05ae60eb-e089-47e8-a44f-a84c27d7e3ca")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "R702")
 					(unit 1)
@@ -10338,13 +11260,17 @@
 		(at 26.67 43.18 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4789625-151d-4665-9a06-366f4cc9d1d4")
 		(property "Reference" "C717"
 			(at 22.86 41.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
@@ -10355,6 +11281,8 @@
 		)
 		(property "Value" "470nF"
 			(at 22.86 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
@@ -10365,78 +11293,94 @@
 		)
 		(property "Footprint" "Footprints:C_0805_2012Metric"
 			(at 25.7048 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}\\datasheet\\GRM21BR72A474KA73_01A-1986952.pdf"
 			(at 26.67 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 26.67 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Functional Block" "Feeder"
 			(at 26.67 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Voltage_Rating" "100V"
 			(at 26.67 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Position Offset" ""
 			(at 26.67 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rotation Offset" ""
 			(at 26.67 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C596323"
 			(at 26.67 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10452,7 +11396,7 @@
 					(unit 1)
 				)
 			)
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C717")
 					(unit 1)
@@ -10465,13 +11409,17 @@
 		(at 215.9 41.91 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "caa311d7-e209-4332-a96a-f9beae2a8bbf")
 		(property "Reference" "R705"
 			(at 218.44 40.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -10481,6 +11429,8 @@
 		)
 		(property "Value" "56k"
 			(at 218.44 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10490,38 +11440,46 @@
 		)
 		(property "Footprint" "Footprints:R_0805_2012Metric"
 			(at 215.9 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 215.9 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 215.9 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C17756"
 			(at 215.9 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10531,7 +11489,7 @@
 			(uuid "b46c38b9-2a20-43f2-bcee-d8d2592fe9b0")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "R705")
 					(unit 1)
@@ -10543,14 +11501,18 @@
 		(lib_id "Connector:TestPoint_Probe")
 		(at 228.6 54.61 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cfaf8a2b-3020-46da-8633-58540fc603a7")
 		(property "Reference" "TP707"
 			(at 232.41 51.7524 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10560,6 +11522,8 @@
 		)
 		(property "Value" "TestPoint_Probe"
 			(at 232.41 54.2924 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10569,36 +11533,42 @@
 		)
 		(property "Footprint" "Footprints:TestPoint_Pad_D1.0mm"
 			(at 233.68 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 233.68 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
 			(at 228.6 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "e3645015-2f0f-4938-aace-d2a84452df18")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "TP707")
 					(unit 1)
@@ -10610,23 +11580,29 @@
 		(lib_id "power:+12V")
 		(at 80.01 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d156ad66-0269-46f3-b74e-5e52e60ccf1e")
 		(property "Reference" "#PWR0717"
 			(at 80.01 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+12V_{LV}"
 			(at 80.01 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10635,36 +11611,42 @@
 		)
 		(property "Footprint" ""
 			(at 80.01 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 80.01 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
 			(at 80.01 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "4e237319-e32c-4dde-9b1a-d19c6e13d17b")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "#PWR0717")
 					(unit 1)
@@ -10677,13 +11659,17 @@
 		(at 80.01 99.06 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d17d948f-67b8-49fc-a82b-5961f5794573")
 		(property "Reference" "C709"
 			(at 76.2 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10693,6 +11679,8 @@
 		)
 		(property "Value" "10uF"
 			(at 76.2 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10702,38 +11690,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 79.0448 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 80.01 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 80.01 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C440198"
 			(at 80.01 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10743,7 +11739,7 @@
 			(uuid "a87b8a2c-374f-4ca7-8818-5b9b56b1593c")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C709")
 					(unit 1)
@@ -10755,13 +11751,17 @@
 		(lib_id "Device:R_Small")
 		(at 67.31 49.53 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d24f2aec-5bea-44cf-8057-06cca7e2c9e4")
 		(property "Reference" "R703"
 			(at 64.77 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -10771,6 +11771,8 @@
 		)
 		(property "Value" "64.9k"
 			(at 64.77 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10780,38 +11782,46 @@
 		)
 		(property "Footprint" "Footprints:R_0805_2012Metric"
 			(at 67.31 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 67.31 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 67.31 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C17788"
 			(at 67.31 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10821,7 +11831,7 @@
 			(uuid "839d7622-918a-44bc-a3ea-48b10ae6f2e0")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "R703")
 					(unit 1)
@@ -10834,13 +11844,17 @@
 		(at 204.47 139.7 90)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "dcf9777c-96cb-4213-8570-82c56ebadb18")
 		(property "Reference" "R709"
 			(at 203.1999 142.24 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10850,6 +11864,8 @@
 		)
 		(property "Value" "47R"
 			(at 201.93 144.272 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10859,38 +11875,46 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 204.47 137.922 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 204.47 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 204.47 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C17714"
 			(at 204.47 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10900,7 +11924,7 @@
 			(uuid "fd688f0f-39e8-44fa-aa76-4d2784e8ce7c")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "R709")
 					(unit 1)
@@ -10913,13 +11937,17 @@
 		(at 137.16 40.64 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0f10276-85f3-4d90-97b9-98e2890ed7e6")
 		(property "Reference" "R701"
 			(at 139.7 39.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -10929,6 +11957,8 @@
 		)
 		(property "Value" "110k"
 			(at 139.7 41.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10938,38 +11968,46 @@
 		)
 		(property "Footprint" "Footprints:R_0805_2012Metric"
 			(at 137.16 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 137.16 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 137.16 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C17422"
 			(at 137.16 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10979,7 +12017,7 @@
 			(uuid "5a96a3ae-f132-4612-a80b-5a9a036b2118")
 		)
 		(instances
-			(project ""
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "R701")
 					(unit 1)
@@ -10992,13 +12030,17 @@
 		(at 107.95 99.06 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0fca169-3da6-4c9d-b075-94529521b9f3")
 		(property "Reference" "C713"
 			(at 104.14 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11008,6 +12050,8 @@
 		)
 		(property "Value" "100nF"
 			(at 104.14 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11017,38 +12061,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 106.9848 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 107.95 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 107.95 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C14663"
 			(at 107.95 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11058,7 +12110,7 @@
 			(uuid "b46cb6ef-8525-45d1-a72f-760375541640")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C713")
 					(unit 1)
@@ -11070,14 +12122,18 @@
 		(lib_id "Connector:TestPoint_Probe")
 		(at 204.47 104.14 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e19b5a8b-758a-4295-9cd4-9dfb7f08e804")
 		(property "Reference" "TP706"
 			(at 208.28 101.2824 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11087,6 +12143,8 @@
 		)
 		(property "Value" "TestPoint_Probe"
 			(at 208.28 103.8224 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11096,36 +12154,42 @@
 		)
 		(property "Footprint" "Footprints:TestPoint_Pad_D1.0mm"
 			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
 			(at 204.47 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "d79e0194-1bad-4f8f-a650-9f035d849efa")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "TP706")
 					(unit 1)
@@ -11137,13 +12201,17 @@
 		(lib_id "Device:C_Small")
 		(at 195.58 39.37 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e2012ffb-b529-4a1a-b6d3-277c51ab21d6")
 		(property "Reference" "C707"
 			(at 199.644 41.148 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11152,6 +12220,8 @@
 		)
 		(property "Value" "100nF"
 			(at 199.644 43.688 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11160,38 +12230,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 195.58 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 195.58 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 195.58 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C49678"
 			(at 195.58 39.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11201,7 +12279,7 @@
 			(uuid "e2ff53b9-5fe7-4a5c-af4c-0bad2594af21")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C707")
 					(unit 1)
@@ -11213,14 +12291,18 @@
 		(lib_id "Device:C")
 		(at 158.75 44.45 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7661f30-a51e-4e12-872e-e96d5f2c1c9a")
 		(property "Reference" "C706"
 			(at 162.56 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11230,6 +12312,8 @@
 		)
 		(property "Value" "10uF"
 			(at 162.56 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11239,38 +12323,46 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 159.7152 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 158.75 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 158.75 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C440198"
 			(at 158.75 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11280,7 +12372,7 @@
 			(uuid "5f13fee9-bbca-4e32-85e3-7ab2810bfe62")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "C706")
 					(unit 1)
@@ -11292,23 +12384,29 @@
 		(lib_id "Symbols:TL431")
 		(at 228.6 149.86 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "ed2972c7-dd88-4aba-8da0-29e669c5f9d4")
 		(property "Reference" "U705"
 			(at 221.996 158.242 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Value" "TL431"
 			(at 221.742 154.432 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11318,40 +12416,48 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 227.584 155.448 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "./datasheets/tl431.pdf"
 			(at 230.378 159.004 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Shunt Regulator, SOT-23"
 			(at 228.854 153.162 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C181103"
 			(at 228.6 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11364,7 +12470,7 @@
 			(uuid "047bb36a-5b13-4c6c-a596-90a74699ab16")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "U705")
 					(unit 1)
@@ -11376,14 +12482,18 @@
 		(lib_id "Connector:TestPoint_Probe")
 		(at 143.51 34.29 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed770317-db1a-4fa4-bd3c-58b01e3676d8")
 		(property "Reference" "TP702"
 			(at 147.32 31.4324 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11393,6 +12503,8 @@
 		)
 		(property "Value" "TestPoint_Probe"
 			(at 147.32 33.9724 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11402,36 +12514,42 @@
 		)
 		(property "Footprint" "Footprints:TestPoint_Pad_D1.0mm"
 			(at 148.59 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 148.59 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
 			(at 143.51 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "f52a281c-7eb8-4ec0-bb02-7f07f80bc66a")
 		)
 		(instances
-			(project "aluminum_pcb"
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "TP702")
 					(unit 1)
@@ -11443,14 +12561,18 @@
 		(lib_id "Regulator_Switching:TPS562202")
 		(at 180.34 39.37 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f720731f-b945-4617-99b5-2a901a0373fc")
 		(property "Reference" "U702"
 			(at 180.34 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11459,6 +12581,8 @@
 		)
 		(property "Value" "TPS562202"
 			(at 180.34 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11467,48 +12591,58 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
 			(at 181.61 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}\\datasheets\\tps562202.pdf"
 			(at 180.34 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "2A Synchronous Step-Down Voltage Regulator 580kHz, adjustable output voltage, 4.5-17V Input Voltage, 0.804V-7V Output Voltage, SOT-563"
 			(at 180.34 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2877547"
 			(at 180.34 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Rotation Offset" "270"
 			(at 180.34 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11530,7 +12664,7 @@
 			(uuid "010926d6-2291-45c2-b979-0292f43c9ef1")
 		)
 		(instances
-			(project ""
+			(project "uVerter"
 				(path "/741fe409-f733-4088-8b5c-1042510db0b9/ecb3e104-baec-42ee-909e-8fcaed71028a"
 					(reference "U702")
 					(unit 1)
@@ -11541,235 +12675,6 @@
 	(sheet_instances
 		(path "/"
 			(page "1")
-		)
-	)
-	(embedded_fonts no)
-	(embedded_files
-		(file
-			(name "Title_block.kicad_wks")
-			(type worksheet)
-			(data |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|
-			)
-			(checksum "D1F68F987CBBACB7AA2B8BDBA818463F")
 		)
 	)
 )

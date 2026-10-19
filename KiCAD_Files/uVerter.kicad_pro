@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -48,7 +50,23 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.1
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.1,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -77,6 +95,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "warning",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -95,6 +114,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -114,9 +134,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "warning",
         "via_dangling": "warning",
@@ -245,17 +268,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": "A"
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -446,11 +480,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "error",
       "footprint_link_issues": "warning",
       "four_way_junction": "error",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -473,6 +510,7 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "error",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -505,6 +543,7 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -513,7 +552,8 @@
         "name": "AC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 7,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "bus_width": 12,
@@ -528,6 +568,7 @@
         "priority": 10,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -545,6 +586,7 @@
         "priority": 14,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -553,37 +595,43 @@
         "name": "HV",
         "pcb_color": "rgb(255, 0, 0)",
         "priority": 6,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "name": "L",
         "pcb_color": "rgb(128, 77, 0)",
         "priority": 4,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "name": "LSW1",
         "pcb_color": "rgb(255, 255, 0)",
         "priority": 9,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "name": "LSW2",
         "pcb_color": "rgb(255, 153, 0)",
         "priority": 8,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "name": "LSW3",
         "pcb_color": "rgb(255, 0, 255)",
         "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "name": "LSW4",
         "pcb_color": "rgb(0, 255, 255)",
         "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "bus_width": 12,
@@ -598,6 +646,7 @@
         "priority": 11,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -606,19 +655,22 @@
         "name": "N",
         "pcb_color": "rgb(0, 0, 194)",
         "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "name": "PEarth",
         "pcb_color": "rgb(0, 194, 0)",
         "priority": 3,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "name": "PV",
         "pcb_color": "rgb(255, 0, 0)",
         "priority": 5,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "bus_width": 12,
@@ -633,6 +685,7 @@
         "priority": 12,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -650,13 +703,14 @@
         "priority": 13,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": {
@@ -833,7 +887,8 @@
         "PV"
       ],
       "/Power stage/V_{IHigh1}": [
-        "DGND"
+        "DGND",
+        "GND_HV"
       ],
       "/Power stage/V_{IHigh2}": [
         "DGND"
@@ -932,9 +987,13 @@
         "SN2"
       ],
       "DGND": [
-        "DGND"
+        "DGND",
+        "GND_HV",
+        "LSW1",
+        "LSW2"
       ],
       "Earth_Protective": [
+        "DGND",
         "PEarth"
       ],
       "GND_{HV}": [
@@ -974,6 +1033,14 @@
       ],
       "Net-(D5-A)": [
         "DGND"
+      ],
+      "Net-(D6-K)": [
+        "DGND",
+        "LSW1"
+      ],
+      "Net-(D7-K)": [
+        "DGND",
+        "LSW2"
       ],
       "Net-(D701-A)": [
         "GND_HV"
@@ -1017,6 +1084,7 @@
         "N"
       ],
       "Net-(J5-Pin_1)": [
+        "DGND",
         "PV"
       ],
       "Net-(J8-Pin_1)": [
@@ -1089,6 +1157,9 @@
       ],
       "Net-(Q9-G)": [
         "DGND"
+      ],
+      "Net-(R11-Pad2)": [
+        "GND_HV"
       ],
       "Net-(Rv401-Pad2)": [
         "GND_HV"
@@ -1462,6 +1533,10 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -1569,6 +1644,7 @@
       "sort_asc": true,
       "sort_field": "Value"
     },
+    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -1576,6 +1652,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -1599,6 +1676,7 @@
     "net_format_name": "KiCad",
     "page_layout_descr_file": "kicad-embed://Title_block.kicad_wks",
     "plot_directory": "./uVerter_schematic.pdf",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -1607,12 +1685,21 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "uVerter.kicad_sch",
+        "name": "uVerter",
+        "uuid": "741fe409-f733-4088-8b5c-1042510db0b9"
+      }
+    ],
+    "used_designators": "R6,R11,R111-112,#PWR143-144,D6-10",
+    "variants": []
   },
   "sheets": [
     [
       "741fe409-f733-4088-8b5c-1042510db0b9",
-      "Root"
+      "uVerter"
     ],
     [
       "361c2cca-6888-4386-bbcc-54e5a005596e",
@@ -1647,5 +1734,11 @@
       "Microcontroller"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }
