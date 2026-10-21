@@ -24,7 +24,7 @@ The project goal are :
 In that sense, the owntech foundation aims at protecting this technical common.
 
 ## Specifications
-This section is inspired from ![OpenMi](https://github.com/OpenCleanEnergy/OpenMI/)
+This section is inspired from [OpenMi](https://github.com/OpenCleanEnergy/OpenMI/)
 
 Comparison of micro-inverters with rated output power between 350VA and 400VA:
 
@@ -133,7 +133,7 @@ Help us improve by opening GitHub issues:
 
 ### Choose a contribution path
 
-Start with ![Contribute.md](Contribute.md) — a living list of work items the community can pick up.  
+Start with [Contribute.md](Contribute.md) — a living list of work items the community can pick up.  
 Whether you’re a student looking for a thesis topic, an engineer wanting to review a safety-critical design, or a maker growing skills in hardware and firmware: you’re welcome here.  
 
 Bring what you have: time, curiosity, test equipment, careful eyes, lived experience installing or repairing PV gear.  
@@ -199,7 +199,7 @@ Wideband transmission systems; Data transmission equipment operating in the 2,4 
 
 ### Grid Regulations
 
-As grid regulations are country specific, please refer to ![Grid regulations](Grid_regulations.md)
+As grid regulations are country specific, please refer to [Grid regulations](Grid_regulations.md)
 
 ## Licence 
 
